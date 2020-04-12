@@ -1,0 +1,20 @@
+{
+  "name": "vix-code",
+  "short_name": "vic",
+  "icons": [
+    {
+      "src": "/code/xuan200.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    },
+    {
+      "src": "/code/xuan500.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/code/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#1e1e1e"
+}
