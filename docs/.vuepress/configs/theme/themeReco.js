@@ -25,12 +25,10 @@ module.exports = {
   //   notify: true,
   //   recordIP: true
   // },
-  vssueConfig: {
-    platform: 'github',
-    owner: 'yesixuan',
-    repo: 'vue-code',
-    clientId: '43a8e5d8ab5db4be4c93',
-    clientSecret: 'c1bb3d31de3b99540a2705b081c073dfc4191979'
+  comment: {
+    type: 'valine',
+    appId: 'RJWm2XhTmAA3kXA5k8q3kGKD-gzGzoHsz',
+    appKey: 'MCNl516YKivtqhEAmr8YaMtY'
   },
   // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
   repo: 'https://www.github.com/yesixuan/vue-code',
@@ -39,7 +37,7 @@ module.exports = {
   // // 假如文档放在一个特定的分支下：
   docsBranch: 'master',
   // // 默认是 false, 设置为 true 来启用
-  editLinks: true
+  // editLinks: true
 }
 
 // github issue 评论
