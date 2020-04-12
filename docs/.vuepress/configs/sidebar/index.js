@@ -1,0 +1,9 @@
+module.exports = {
+  '/views/vue-next/': [
+    {
+      title: 'vue-next',
+      collapsable: false,
+      children: ['reactive', 'handler', 'effect']
+    },
+  ],
+};
