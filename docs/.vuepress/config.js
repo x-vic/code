@@ -18,7 +18,7 @@ module.exports = resolve({
       {
         rel: 'shortcut icon ',
         type: 'images/x-icon',
-        href: '/favicon.ico'
+        href: '/logo/favicon.ico'
       }
     ],
     [

@@ -3,12 +3,12 @@
   "short_name": "vic",
   "icons": [
     {
-      "src": "/code/xuan200.png",
+      "src": "/code/logo/logo200.png",
       "sizes": "200x200",
       "type": "image/png"
     },
     {
-      "src": "/code/xuan500.png",
+      "src": "/code/logo/logo500.png",
       "sizes": "500x500",
       "type": "image/png"
     }
