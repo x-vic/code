@@ -13,4 +13,13 @@ module.exports = [
       }
     ]
   },
+  {
+    text: '简单实现',
+    items: [
+      {
+        text: 'react',
+        link: '/views/react/'
+      }
+    ]
+  }
 ];

@@ -6,4 +6,11 @@ module.exports = {
       children: ['reactive', 'handler', 'effect']
     },
   ],
+  '/views/react/': [
+    {
+      title: 'react',
+      collapsable: false,
+      children: ['']
+    },
+  ],
 };

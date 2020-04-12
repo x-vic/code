@@ -1,4 +1,7 @@
-# effect
+---
+title: effect
+lang: zh-cn
+---
 
 vue-next 中的依赖收集通过显式调用它提供的`effect`方法来启动。
 

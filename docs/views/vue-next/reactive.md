@@ -1,4 +1,7 @@
-# reactive
+---
+title: reactive
+lang: zh-cn
+---
 
 ## usage
 
