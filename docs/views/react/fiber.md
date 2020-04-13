@@ -1,5 +1,5 @@
 ---
-title: Concurrent Mode && fiber
+title: Concurrent Mode & fiber
 lang: zh-cn
 ---
 
@@ -203,3 +203,7 @@ function performUnitOfWork(fiber) {
   return null
 }
 ```
+
+::: warn 问题
+目前虽然实现的中断遍历过程，但是中断之后可能会造成页面只渲染一部分的情况...
+:::
