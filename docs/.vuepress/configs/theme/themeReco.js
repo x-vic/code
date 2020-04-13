@@ -38,6 +38,10 @@ module.exports = {
   docsBranch: 'master',
   // // 默认是 false, 设置为 true 来启用
   // editLinks: true
+  markdown: {
+    // 启用流程图功能
+    flowchart: true,
+  },
 }
 
 // github issue 评论
