@@ -10,7 +10,7 @@ module.exports = {
     {
       title: 'react',
       collapsable: false,
-      children: ['']
+      children: ['', 'fiber', 'render&commit', 'reconciliation']
     },
   ],
 };

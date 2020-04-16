@@ -1,0 +1,25 @@
+@font-face {
+ font-family: 'dm';
+ src: url('/fonts/dm-regular.ttf');
+      // url('/fonts/dm-italic.ttf');
+}
+
+@font-face {
+ font-family: 'dm-italic';
+ src: url('/fonts/dm-italic.ttf');
+}
+
+@font-face {
+ font-family: 'HYQH';
+ src: url('/fonts/汉仪旗黑50简.ttf');
+}
+
+body, code, kbd, .line-number 
+  font-family: dm, HYQH !important
+
+code, kbd, .line-number 
+  font-size 16px !important
+
+code > .comment {
+  font-family: dm-italic, HYQH !important
+}
