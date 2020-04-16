@@ -6,6 +6,7 @@ lang: zh-cn
 ## createElement
 
 将 `babel` 解析过后的参数处理成一个虚拟 `dom`
+
 ```js
 export function createElement(type, props, ...children) {
   return {
@@ -19,6 +20,7 @@ export function createElement(type, props, ...children) {
 ```
 
 ::: details createTextElement的实现
+
 ```js
 function createTextElement(text) {
   return {
@@ -30,6 +32,7 @@ function createTextElement(text) {
   }
 }
 ```
+
 :::
 
 ## render
@@ -51,7 +54,3 @@ export function render(element, container) {
   container.appendChild(dom)
 }
 ```
-
-
-
-
