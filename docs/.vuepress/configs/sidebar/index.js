@@ -6,11 +6,18 @@ module.exports = {
       children: ['reactive', 'handler', 'effect']
     },
   ],
-  '/views/react/': [
+  '/views/owner-react/': [
     {
       title: 'react',
       collapsable: false,
       children: ['', 'fiber', 'render&commit', 'reconciliation', 'functionComponent', 'useState']
     },
   ],
+  '/views/owner-vue-next': [
+    {
+      title: 'vue-next',
+      collapsable: false,
+      children: ['',]
+    },
+  ]
 };

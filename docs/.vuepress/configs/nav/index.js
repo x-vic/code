@@ -18,7 +18,11 @@ module.exports = [
     items: [
       {
         text: 'react',
-        link: '/views/react/'
+        link: '/views/owner-react/'
+      },
+      {
+        text: 'vue next',
+        link: '/views/owner-vue-next/'
       }
     ]
   }
