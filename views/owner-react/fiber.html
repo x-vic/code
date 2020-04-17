@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Concurrent Mode &amp; fiber | code</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="shortcut icon " type="images/x-icon" href="/code/logo/favicon.ico">
+    <link rel="manifest" href="/code/manifest.json">
+    <meta name="description" content="code">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="author" content="Vic">
+    <link rel="preload" href="/code/assets/css/0.styles.af41ed38.css" as="style"><link rel="preload" href="/code/assets/js/app.9d94b32c.js" as="script"><link rel="preload" href="/code/assets/js/vendors~layout-Layout.8f713417.js" as="script"><link rel="preload" href="/code/assets/js/vendors~layout-BlogEntry~layout-Layout.ffb69011.js" as="script"><link rel="preload" href="/code/assets/js/page-Concurrent Mode & fiber.0059cbf6.js" as="script"><link rel="prefetch" href="/code/assets/js/17.fced55d3.js"><link rel="prefetch" href="/code/assets/js/layout-BlogEntry.5bc1fc5f.js"><link rel="prefetch" href="/code/assets/js/layout-NotFound.86925cd7.js"><link rel="prefetch" href="/code/assets/js/page-createElement && render.1dac711e.js"><link rel="prefetch" href="/code/assets/js/page-effect.4f485404.js"><link rel="prefetch" href="/code/assets/js/page-handlers 代理方法.4bca4e80.js"><link rel="prefetch" href="/code/assets/js/page-reactive && effect.e4803b98.js"><link rel="prefetch" href="/code/assets/js/page-reactive.191e9c42.js"><link rel="prefetch" href="/code/assets/js/page-reconciliation.3be1ba80.js"><link rel="prefetch" href="/code/assets/js/page-render & commit.8809d3e1.js"><link rel="prefetch" href="/code/assets/js/page-useState.733b86d8.js"><link rel="prefetch" href="/code/assets/js/page-函数组件.768286d5.js"><link rel="prefetch" href="/code/assets/js/page-首页.c39b8c74.js">
+    <link rel="stylesheet" href="/code/assets/css/0.styles.af41ed38.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/code/" class="home-link router-link-active"><!----> <span class="site-name">code</span></a> <div class="links"><div class="color-picker"><span class="color-button"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="skin-icon"><path d="M224 800c0 9.6 3.2 44.8 6.4 54.4 6.4 48-48 76.8-48 76.8s80 41.6 147.2 0 134.4-134.4
+        38.4-195.2c-22.4-12.8-41.6-19.2-57.6-19.2C259.2 716.8 227.2 761.6 224 800zM560 675.2l-32
+        51.2c-51.2 51.2-83.2 32-83.2 32 25.6 67.2 0 112-12.8 128 25.6 6.4 51.2 9.6 80 9.6 54.4 0
+        102.4-9.6 150.4-32l0 0c3.2 0 3.2-3.2 3.2-3.2 22.4-16 12.8-35.2
+        6.4-44.8-9.6-12.8-12.8-25.6-12.8-41.6 0-54.4 60.8-99.2 137.6-99.2 6.4 0 12.8 0 22.4
+        0 12.8 0 38.4 9.6 48-25.6 0-3.2 0-3.2 3.2-6.4 0-3.2 3.2-6.4 3.2-6.4 6.4-16 6.4-16 6.4-19.2
+        9.6-35.2 16-73.6 16-115.2 0-105.6-41.6-198.4-108.8-268.8C704 396.8 560 675.2 560 675.2zM224
+        419.2c0-28.8 22.4-51.2 51.2-51.2 28.8 0 51.2 22.4 51.2 51.2 0 28.8-22.4 51.2-51.2 51.2C246.4
+        470.4 224 448 224 419.2zM320 284.8c0-22.4 19.2-41.6 41.6-41.6 22.4 0 41.6 19.2 41.6 41.6 0
+        22.4-19.2 41.6-41.6 41.6C339.2 326.4 320 307.2 320 284.8zM457.6 208c0-12.8 12.8-25.6 25.6-25.6
+        12.8 0 25.6 12.8 25.6 25.6 0 12.8-12.8 25.6-25.6 25.6C470.4 233.6 457.6 220.8 457.6 208zM128
+        505.6C128 592 153.6 672 201.6 736c28.8-60.8 112-60.8 124.8-60.8-16-51.2 16-99.2
+        16-99.2l316.8-422.4c-48-19.2-99.2-32-150.4-32C297.6 118.4 128 291.2 128 505.6zM764.8
+        86.4c-22.4 19.2-390.4 518.4-390.4 518.4-22.4 28.8-12.8 76.8 22.4 99.2l9.6 6.4c35.2 22.4
+        80 12.8 99.2-25.6 0 0 6.4-12.8 9.6-19.2 54.4-105.6 275.2-524.8 288-553.6
+        6.4-19.2-3.2-32-19.2-32C777.6 76.8 771.2 80 764.8 86.4z"></path></svg></span> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <!----></div></div></div> <!----> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码" class="dropdown-title"><span class="title"><!---->
+      源码
+    </span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>vue-next</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/code/views/vue-next/reactive.html" class="nav-link"><!---->
+  vue-next
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="简单实现" class="dropdown-title"><span class="title"><!---->
+      简单实现
+    </span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/views/owner-react/" class="nav-link router-link-active"><!---->
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/views/owner-vue-next/" class="nav-link"><!---->
+  vue next
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!----> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码" class="dropdown-title"><span class="title"><!---->
+      源码
+    </span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>vue-next</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/code/views/vue-next/reactive.html" class="nav-link"><!---->
+  vue-next
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="简单实现" class="dropdown-title"><span class="title"><!---->
+      简单实现
+    </span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/views/owner-react/" class="nav-link router-link-active"><!---->
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/views/owner-vue-next/" class="nav-link"><!---->
+  vue next
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><!----> <span>react</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/code/views/owner-react/" class="sidebar-link">createElement &amp;&amp; render</a></li><li><a href="/code/views/owner-react/fiber.html" class="active sidebar-link">Concurrent Mode &amp; fiber</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/code/views/owner-react/fiber.html#利用浏览器的空闲算力" class="sidebar-link">利用浏览器的空闲算力</a></li><li class="sidebar-sub-header"><a href="/code/views/owner-react/fiber.html#如何处理一个-fiber" class="sidebar-link">如何处理一个 fiber</a></li><li class="sidebar-sub-header"><a href="/code/views/owner-react/fiber.html#整体一览" class="sidebar-link">整体一览</a></li></ul></li><li><a href="/code/views/owner-react/render&amp;commit.html" class="sidebar-link">render &amp; commit</a></li><li><a href="/code/views/owner-react/reconciliation.html" class="sidebar-link">reconciliation</a></li><li><a href="/code/views/owner-react/functionComponent.html" class="sidebar-link">函数组件</a></li><li><a href="/code/views/owner-react/useState.html" class="sidebar-link">useState</a></li></ul></section></li></ul> </aside> <main class="page"><nav class="breadcrumb"><ul><li><a class="iconfont">createElement &amp;&amp; render</a></li><li class="is-active"><a class="iconfont">Concurrent Mode &amp; fiber</a></li></ul></nav>  <div class="page-title"><h1>Concurrent Mode &amp; fiber</h1> <div class="page-info"><span><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon author-icon"><path d="M649.6 633.6c86.4-48 147.2-144 147.2-249.6 0-160-128-288-288-288s-288 128-288 288c0 108.8
+        57.6 201.6 147.2 249.6-121.6 48-214.4 153.6-240 288-3.2 9.6 0 19.2 6.4 25.6 3.2 9.6 12.8 12.8
+        22.4 12.8h704c9.6 0 19.2-3.2 25.6-12.8 6.4-6.4 9.6-16 6.4-25.6-25.6-134.4-121.6-240-243.2-288z" fill="currentColor"></path></svg> <span>Vic</span></span> <span><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon eye-icon"><path d="M992 512.096c0-5.76-0.992-10.592-1.28-11.136-0.192-2.88-1.152-8.064-2.08-10.816-0.256-0.672-0.544-1.376-0.832-2.08-0.48-1.568-1.024-3.104-1.6-4.32C897.664 290.112 707.104 160 512 160 316.928 160 126.368
+          290.016 38.24 482.592c-1.056 2.112-1.792 4.096-2.272 5.856-0.224 0.544-0.448 1.088-0.64
+          1.6-1.76 5.088-1.792 8.64-1.632 7.744-0.832 3.744-1.568 11.168-1.568 11.168-0.224 2.272-0.224
+          4.032 0.032 6.304 0 0 0.736 6.464 1.088 7.808 0.128 1.824 0.576 4.512 1.12 6.976l-0.032 0c0.448
+          2.08 1.12 4.096 1.984 6.08 0.48 1.536 0.992 2.976 1.472 4.032C126.432 733.856 316.992 864 512
+          864c195.136 0 385.696-130.048 473.216-321.696 1.376-2.496 2.24-4.832 2.848-6.912 0.256-0.608
+          0.48-1.184 0.672-1.728 1.536-4.48 1.856-8.32 1.728-8.32 0 0 0 0-0.032 0.032C991.04 522.272 992
+          517.632 992 512.096zM512 672c-88.224 0-160-71.776-160-160s71.776-160 160-160 160 71.776 160
+          160S600.224 672 512 672z" fill="currentColor"></path></svg> <span id="/code/views/owner-react/fiber.html" data-flag-title="Concurrent Mode &amp; fiber" class="leancloud_visitors"><span class="leancloud-visitors-count" style="color:#999;">...</span></span></span> <!----> <!----> <!----></div></div> <!----> <div class="theme-default-content content__default"><div class="custom-block tip"><p class="custom-block-title">主旨</p> <p>上一版实现的 <code>render</code> 是通过递归的方式将 <code>dom</code> 层层插入，最终实现了虚拟dom到页面的渲染。<br>
+但是这么做的问题在于递归的过程无法中断，从而导致阻塞用户点击事件和渲染动画这些高优先级的操作，给人一种卡顿的感觉。<br>
+这次旨在解决上述问题。</p></div> <p>Concurrent Mode</p> <div class="md-flowchart loading"><svg viewBox="0 0 30 30" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px" class="md-flowchart-loading-icon" style="enable-background:new 0 0 50 50;"><rect height="5" width="4" x="0" y="13"><animate attributeName="height" attributeType="XML" begin="0s" dur="0.6s" repeatCount="indefinite" values="5;21;5"></animate> <animate attributeName="y" attributeType="XML" begin="0s" dur="0.6s" repeatCount="indefinite" values="13; 5; 13"></animate></rect> <rect height="5" width="4" x="10" y="13"><animate attributeName="height" attributeType="XML" begin="0.15s" dur="0.6s" repeatCount="indefinite" values="5;21;5"></animate> <animate attributeName="y" attributeType="XML" begin="0.15s" dur="0.6s" repeatCount="indefinite" values="13; 5; 13"></animate></rect> <rect height="5" width="4" x="20" y="13"><animate attributeName="height" attributeType="XML" begin="0.3s" dur="0.6s" repeatCount="indefinite" values="5;21;5"></animate> <animate attributeName="y" attributeType="XML" begin="0.3s" dur="0.6s" repeatCount="indefinite" values="13; 5; 13"></animate></rect></svg></div><h2 id="利用浏览器的空闲算力"><a href="#利用浏览器的空闲算力" class="header-anchor">#</a> 利用浏览器的空闲算力</h2> <p>在一个循环中执行任务单元；<br>
+更新下一个任务单元，同时判断是否还有空闲时间；<br>
+跳出循环之后将任务添加到下一次空闲操作中。
+react 目前是使用自己实现的调度算法，这里使用 <code>requestIdleCallback</code> 这个浏览器提供的 API 实现。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> nextUnitOfWork <span class="token operator">=</span> <span class="token keyword">null</span>
+
+<span class="token comment">// 一旦浏览器空闲，就触发执行单元任务</span>
+<span class="token function">requestIdleCallback</span><span class="token punctuation">(</span>workLoop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">workLoop</span><span class="token punctuation">(</span><span class="token parameter">deadline</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> shouldYield <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>nextUnitOfWork <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>shouldYield<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    nextUnitOfWork <span class="token operator">=</span> <span class="token function">performUnitOfWork</span><span class="token punctuation">(</span>nextUnitOfWork<span class="token punctuation">)</span>
+    shouldYield <span class="token operator">=</span> deadline<span class="token punctuation">.</span><span class="token function">timeRemaining</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">requestIdleCallback</span><span class="token punctuation">(</span>workLoop<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="如何处理一个-fiber"><a href="#如何处理一个-fiber" class="header-anchor">#</a> 如何处理一个 fiber</h2> <p><img src="/code/images/fiber.png" alt="fiber"></p> <ol><li>创建对应的 dom</li> <li>将自身的 dom 插入到父 dom 上</li> <li>为 children 创建 fiber
+<ol><li>为每一个 child 创建 parent 指向当前 fiber</li> <li>创建当前 fiber 到第一个 child 的指向</li> <li>为相邻的 child 创建前一个到后一个的 sibling 指向</li></ol></li> <li>找到下一个任务单元返回
+<ol><li>当前 fiber 有 child 返回它</li> <li>当前 fiber 有 sibling 返回它</li> <li>没有 child 也没有 sibling，那就回到 4.2 找 parent 的 sibling</li></ol></li></ol> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">performUnitOfWork</span><span class="token punctuation">(</span><span class="token parameter">fiber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fiber<span class="token punctuation">.</span>dom <span class="token operator">=</span> <span class="token function">createDom</span><span class="token punctuation">(</span>fiber<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fiber<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>dom<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 为每个子元素创建新的 fiber</span>
+  <span class="token keyword">const</span> elements <span class="token operator">=</span> fiber<span class="token punctuation">.</span>props<span class="token punctuation">.</span>children
+  <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">let</span> prevSibling <span class="token operator">=</span> <span class="token keyword">null</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>index <span class="token operator">&lt;</span> elements<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> element <span class="token operator">=</span> elements<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+    <span class="token keyword">const</span> newFiber <span class="token operator">=</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> element<span class="token punctuation">.</span>type<span class="token punctuation">,</span>
+      props<span class="token operator">:</span> element<span class="token punctuation">.</span>props<span class="token punctuation">,</span>
+      parent<span class="token operator">:</span> fiber<span class="token punctuation">,</span>
+      dom<span class="token operator">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">// 根据上面的图示，父节点只链接第一个子节点</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      fiber<span class="token punctuation">.</span>child <span class="token operator">=</span> newFiber
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 兄节点链接弟节点</span>
+      prevSibling<span class="token punctuation">.</span>sibling <span class="token operator">=</span> newFiber
+    <span class="token punctuation">}</span>
+    prevSibling <span class="token operator">=</span> newFiber
+    index<span class="token operator">++</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 返回下一个任务单元（fiber）</span>
+  <span class="token comment">// 有子节点直接返回</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>child<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> fiber<span class="token punctuation">.</span>child
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 没有子节点则找兄弟节点，兄弟节点也没有找父节点的兄弟节点，</span>
+  <span class="token comment">// 循环遍历直至找到为止</span>
+  <span class="token keyword">let</span> nextFiber <span class="token operator">=</span> fiber
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>nextFiber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>nextFiber<span class="token punctuation">.</span>sibling<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> nextFiber<span class="token punctuation">.</span>sibling
+    <span class="token punctuation">}</span>
+    nextFiber <span class="token operator">=</span> nextFiber<span class="token punctuation">.</span>parent
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><h2 id="整体一览"><a href="#整体一览" class="header-anchor">#</a> 整体一览</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> nextUnitOfWork <span class="token operator">=</span> <span class="token keyword">null</span>
+
+<span class="token comment">// 一旦浏览器空闲，就触发执行单元任务</span>
+<span class="token function">requestIdleCallback</span><span class="token punctuation">(</span>workLoop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">createDom</span><span class="token punctuation">(</span><span class="token parameter">fiber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> dom <span class="token operator">=</span> fiber<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'TEXT_ELEMENT'</span>
+      <span class="token operator">?</span> document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+      <span class="token operator">:</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>type<span class="token punctuation">)</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">isProperty</span> <span class="token operator">=</span> <span class="token parameter">key</span> <span class="token operator">=&gt;</span> key <span class="token operator">!==</span> <span class="token string">'children'</span>
+  Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>props<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>isProperty<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">name</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      dom<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> fiber<span class="token punctuation">.</span>props<span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> dom
+<span class="token punctuation">}</span>
+
+<span class="token comment">// render 设置 nextUnitOfWork 为根的 fiber</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">element<span class="token punctuation">,</span> container</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  nextUnitOfWork <span class="token operator">=</span> <span class="token punctuation">{</span>
+    dom<span class="token operator">:</span> container<span class="token punctuation">,</span>
+    props<span class="token operator">:</span> <span class="token punctuation">{</span>
+      children<span class="token operator">:</span> <span class="token punctuation">[</span>element<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">workLoop</span><span class="token punctuation">(</span><span class="token parameter">deadline</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> shouldYield <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>nextUnitOfWork <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>shouldYield<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    nextUnitOfWork <span class="token operator">=</span> <span class="token function">performUnitOfWork</span><span class="token punctuation">(</span>nextUnitOfWork<span class="token punctuation">)</span>
+    shouldYield <span class="token operator">=</span> deadline<span class="token punctuation">.</span><span class="token function">timeRemaining</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">requestIdleCallback</span><span class="token punctuation">(</span>workLoop<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 处理一个 fiber</span>
+<span class="token keyword">function</span> <span class="token function">performUnitOfWork</span><span class="token punctuation">(</span><span class="token parameter">fiber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fiber<span class="token punctuation">.</span>dom <span class="token operator">=</span> <span class="token function">createDom</span><span class="token punctuation">(</span>fiber<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fiber<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>dom<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>dom<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 为每个子元素创建新的 fiber</span>
+  <span class="token keyword">const</span> elements <span class="token operator">=</span> fiber<span class="token punctuation">.</span>props<span class="token punctuation">.</span>children
+  <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">let</span> prevSibling <span class="token operator">=</span> <span class="token keyword">null</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>index <span class="token operator">&lt;</span> elements<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> element <span class="token operator">=</span> elements<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+    <span class="token keyword">const</span> newFiber <span class="token operator">=</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> element<span class="token punctuation">.</span>type<span class="token punctuation">,</span>
+      props<span class="token operator">:</span> element<span class="token punctuation">.</span>props<span class="token punctuation">,</span>
+      parent<span class="token operator">:</span> fiber<span class="token punctuation">,</span>
+      dom<span class="token operator">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">// 根据上面的图示，父节点只链接第一个子节点</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      fiber<span class="token punctuation">.</span>child <span class="token operator">=</span> newFiber
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 兄节点链接弟节点</span>
+      prevSibling<span class="token punctuation">.</span>sibling <span class="token operator">=</span> newFiber
+    <span class="token punctuation">}</span>
+    prevSibling <span class="token operator">=</span> newFiber
+    index<span class="token operator">++</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 返回下一个任务单元（fiber）</span>
+  <span class="token comment">// 有子节点直接返回</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fiber<span class="token punctuation">.</span>child<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> fiber<span class="token punctuation">.</span>child
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 没有子节点则找兄弟节点，兄弟节点也没有找父节点的兄弟节点，</span>
+  <span class="token comment">// 循环遍历直至找到为止</span>
+  <span class="token keyword">let</span> nextFiber <span class="token operator">=</span> fiber
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>nextFiber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>nextFiber<span class="token punctuation">.</span>sibling<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> nextFiber<span class="token punctuation">.</span>sibling
+    <span class="token punctuation">}</span>
+    nextFiber <span class="token operator">=</span> nextFiber<span class="token punctuation">.</span>parent
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">问题</p> <p>目前虽然实现的中断遍历过程，但是中断之后可能会造成页面只渲染一部分的情况...</p></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次编辑于:</span> <span class="time">2020年4月17日 02:25</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/code/views/owner-react/" class="prev router-link-active">createElement &amp;&amp; render</a></span> <span class="next"><a href="/code/views/owner-react/render&amp;commit.html">render &amp; commit</a>→
+    </span></p></div> <div class="comments-wrapper"><div class="valine-wrapper"><div id="valine"></div></div></div> <div class="footer">Copyright © 2020-present Vic</div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/code/assets/js/app.9d94b32c.js" defer></script><script src="/code/assets/js/vendors~layout-Layout.8f713417.js" defer></script><script src="/code/assets/js/vendors~layout-BlogEntry~layout-Layout.ffb69011.js" defer></script><script src="/code/assets/js/page-Concurrent Mode & fiber.0059cbf6.js" defer></script>
+  </body>
+</html>
