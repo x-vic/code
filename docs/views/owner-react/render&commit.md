@@ -1,6 +1,6 @@
 ---
 title: render & commit
-lang: zh-cn
+lang: zh-CN
 ---
 
 ## render

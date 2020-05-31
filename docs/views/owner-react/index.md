@@ -1,6 +1,6 @@
 ---
 title: createElement && render
-lang: zh-cn
+lang: zh-CN
 ---
 
 ## createElement

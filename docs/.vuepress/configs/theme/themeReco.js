@@ -7,7 +7,8 @@ module.exports = {
   // 自动形成侧边导航
   sidebar: 'auto',
   // 侧边栏深度
-  sidebarDepth: 1,
+  sidebarDepth: 2,
+  displayAllHeaders: true, // 自动提取锚点链接
   // 最后更新时间
   lastUpdated: '上次更新', // string | boolean
   // 作者

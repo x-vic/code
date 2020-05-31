@@ -1,6 +1,6 @@
 ---
 title: 函数组件
-lang: zh-cn
+lang: zh-CN
 ---
 
 ## 函数组件是怎样转化的？

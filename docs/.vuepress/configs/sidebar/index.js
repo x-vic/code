@@ -3,7 +3,7 @@ module.exports = {
     {
       title: 'vue-next',
       collapsable: false,
-      children: ['reactive', 'handler', 'effect', 'createApp&mount']
+      children: ['reactive', 'handler', 'effect', 'createApp&mount', 'componentDetail']
     },
   ],
   '/views/owner-react/': [

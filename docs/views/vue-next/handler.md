@@ -1,6 +1,6 @@
 ---
 title: handlers 代理方法
-lang: zh-cn
+lang: zh-CN
 ---
 
 ## mutableHandlers 常规对象使用的 handler

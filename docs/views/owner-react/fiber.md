@@ -1,6 +1,6 @@
 ---
 title: Concurrent Mode & fiber
-lang: zh-cn
+lang: zh-CN
 ---
 
 :::tip 主旨

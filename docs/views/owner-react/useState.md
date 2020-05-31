@@ -1,6 +1,6 @@
 ---
 title: useState
-lang: zh-cn
+lang: zh-CN
 ---
 
 > 注意以下代码省略了未变化部分

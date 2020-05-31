@@ -14,4 +14,5 @@ module.exports = Object.assign({}, themeReco, {
     green: "#3eaf7c",
     orange: "#fb9b5f",
   },
+  pwa: '发现新内容可用',
 });

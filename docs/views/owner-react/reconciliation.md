@@ -1,6 +1,6 @@
 ---
 title: reconciliation
-lang: zh-cn
+lang: zh-CN
 ---
 
 > 目前我们只添加节点到 DOM，还没考虑更新和删除节点的情况。要处理这2种情况，需要对比上次渲染的 fiber 和当前渲染的 fiber 的差异，根据差异决定是更新还是删除节点。React 把这个过程叫 `Reconciliation`。

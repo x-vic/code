@@ -1,11 +1,11 @@
 ---
 title: createApp && mount
-lang: zh-cn
+lang: zh-CN
 ---
 
 ![patch](/code/images/patch.svg)
 
-# createApp
+## createApp
 
 1. 根据不同的宿主环境创建不同的 app
 2. 初始化 app 的各种方法
@@ -40,7 +40,7 @@ const createApp = (rootComponent, rootProps = null) => {
 }
 ```
 
-# mount
+## mount
 
 ```ts
 mount(rootContainer: HostElement, isHydrate?: boolean): any {
@@ -53,7 +53,7 @@ mount(rootContainer: HostElement, isHydrate?: boolean): any {
 }
 ```
 
-## 根 render
+### 根 render
 
 ```ts
 const render: RootRenderFunction = (vnode, container) => {
@@ -63,7 +63,7 @@ const render: RootRenderFunction = (vnode, container) => {
 }
 ```
 
-## patch
+### patch
 
 ```ts
 const patch: PatchFn = (
@@ -138,7 +138,7 @@ const patch: PatchFn = (
 }
 ```
 
-## processComponent
+### processComponent
 
 1. 判断 n1 是否存在来执行
 
@@ -169,7 +169,7 @@ const processComponent = (
 }
 ```
 
-## mountComponent
+### mountComponent
 
 1. 创建组件实例
 2. 执行 setup 函数
@@ -212,7 +212,7 @@ const mountComponent: MountComponentFn = (
 }
 ```
 
-## setupRenderEffect
+### setupRenderEffect
 
 创建子节点的 vnode
 
@@ -269,9 +269,9 @@ const setupRenderEffect: SetupRenderEffectFn = (
 }
 ```
 
-## effect 调用 patch
+### effect 调用 patch
 
-## processElement (n2 为 article 这个节点的 vnode)
+### processElement (n2 为 article 这个节点的 vnode)
 
 ```ts
 const processElement = (
@@ -301,7 +301,7 @@ const processElement = (
 }
 ```
 
-## mountElement
+### mountElement
 
 这里包含递归终止条件，即这个 vnode 的 children 是 text，那就终止。
 
@@ -397,7 +397,7 @@ const mountElement = (
 }
 ```
 
-### mountChildren
+#### mountChildren
 
 递归调用 patch
 
