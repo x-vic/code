@@ -23,6 +23,10 @@ module.exports = [
       {
         text: 'vue next',
         link: '/views/owner-vue-next/'
+      },
+      {
+        text: 'koa',
+        link: '/views/owner-koa/',
       }
     ]
   }
