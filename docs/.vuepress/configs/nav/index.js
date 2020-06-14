@@ -29,5 +29,14 @@ module.exports = [
         link: '/views/owner-koa/',
       }
     ]
+  },
+  {
+    text: '进阶',
+    items: [
+      {
+        text: 'JS',
+        link: '/views/JS/'
+      },
+    ]
   }
 ];

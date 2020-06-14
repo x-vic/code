@@ -27,4 +27,11 @@ module.exports = {
       children: ['',]
     }
   ],
+  '/views/JS': [
+    {
+      title: 'Blob',
+      collapsable: false,
+      children: ['',]
+    },
+  ],
 };
