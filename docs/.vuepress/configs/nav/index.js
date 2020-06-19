@@ -27,7 +27,11 @@ module.exports = [
       {
         text: 'koa',
         link: '/views/owner-koa/',
-      }
+      },
+      {
+        text: 'redux',
+        link: '/views/owner-redux/',
+      },
     ]
   },
   {

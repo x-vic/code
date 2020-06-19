@@ -13,28 +13,28 @@ module.exports = {
       children: ['', 'fiber', 'render&commit', 'reconciliation', 'functionComponent', 'useState']
     },
   ],
-  '/views/owner-vue-next': [
+  '/views/owner-vue-next/': [
     {
       title: 'vue-next',
       collapsable: false,
       children: ['',]
     },
   ],
-  '/views/owner-koa': [
+  '/views/owner-koa/': [
     {
       title: 'koa',
       collapsable: false,
       children: ['',]
     }
   ],
-  '/views/owner-redux': [
+  '/views/owner-redux/': [
     {
       title: 'redux',
       collapsable: false,
       children: ['',]
     }
   ],
-  '/views/JS': [
+  '/views/JS/': [
     {
       title: 'JS',
       collapsable: false,
