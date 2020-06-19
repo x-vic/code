@@ -1,5 +1,6 @@
 ---
 title: Blob
+lang: zh-CN
 ---
 
 ## Blob 是什么

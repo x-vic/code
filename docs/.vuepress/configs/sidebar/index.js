@@ -27,6 +27,13 @@ module.exports = {
       children: ['',]
     }
   ],
+  '/views/owner-redux': [
+    {
+      title: 'redux',
+      collapsable: false,
+      children: ['',]
+    }
+  ],
   '/views/JS': [
     {
       title: 'JS',
