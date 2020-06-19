@@ -31,7 +31,7 @@ module.exports = {
     {
       title: 'redux',
       collapsable: false,
-      children: ['',]
+      children: ['', 'react-redux',]
     }
   ],
   '/views/JS/': [

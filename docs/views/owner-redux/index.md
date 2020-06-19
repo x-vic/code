@@ -34,6 +34,7 @@ const createStore = (reducer, initState, enhancer) => {
     if (typeof listener === "function") {
       listeners.push(listener)
     }
+    // 在监听的同时返回卸载监听的函数，利用闭包缓存监听者，以免想卸载监听的时候却找不到对应的想卸载的监听者
     return () => unsubscribe(listener)
   }
   const unsubscribe = (listener) => {
