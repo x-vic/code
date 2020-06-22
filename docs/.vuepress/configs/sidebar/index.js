@@ -36,9 +36,16 @@ module.exports = {
   ],
   '/views/JS/': [
     {
-      title: 'JS',
+      title: '前端',
       collapsable: false,
       children: ['', 'upload',]
+    },
+  ],
+  '/views/functional/': [
+    {
+      title: '函数式编程',
+      collapsable: false,
+      children: ['', 'inputs', 'compose',]
     },
   ],
 };

@@ -38,8 +38,12 @@ module.exports = [
     text: '进阶',
     items: [
       {
-        text: 'JS',
+        text: '前端',
         link: '/views/JS/'
+      },
+      {
+        text: '函数式编程',
+        link: '/views/functional/'
       },
     ]
   }
