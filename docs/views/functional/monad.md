@@ -104,7 +104,7 @@ class Task {
     return new Task((reject, resolve) => fork(
       err => reject(err),
       res => res.fork(reject, resolve)
-    ))·
+    ))
   }
   // 借助 map 和 join 方法（尝试用 . 的方式调用 chain 方法执行串行的两个任务看看，会有惊喜）
   chain(fn) {
@@ -119,4 +119,29 @@ class Task {
     )
   }
 }
+```
+
+
+## 换个角度看 chain
+
+> 使用传入的函数处理自己的值，使用外部的壳（如果外部带壳的话）
+
+前面我们由 `map` 和 `join` 进化为 `chain`。但如果只是把 `chain` 当作是一个吸尘器的话，还是太小看 `chain` 了。而且每次理解 `chain` 都要借助 map 和 join 的话，对我们心智也是个不小的负担。  
+
+因为 `chain` 可以轻松地嵌套多个作用，因此我们就能以一种纯函数的方式来表示序列(sequence)和变量赋值(variable assignment)。
+
+```js
+// getJSON :: Url -> Params -> Task JSON
+// querySelector :: Selector -> IO DOM
+
+getJSON('/authenticate', {username: 'stale', password: 'crackers'})
+  .chain(user => getJSON('/friends', {user_id: user.id}))
+
+querySelector("input.username")
+  .chain(uname => querySelector("input.email")
+    .chain(email => IO.of("Welcome " + uname.value + " " + "prepare for spam at " + email.value))
+  )
+
+Maybe.of(3)
+  .chain(three => Maybe.of(2).map(add(three)))
 ```
