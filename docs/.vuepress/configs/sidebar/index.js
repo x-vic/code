@@ -45,7 +45,7 @@ module.exports = {
     {
       title: '函数式编程',
       collapsable: false,
-      children: ['', 'inputs', 'compose', 'functor', 'monad', 'applicative',]
+      children: ['', 'inputs', 'compose', 'functor', 'monad', 'applicative', 'transform',]
     },
   ],
 };
