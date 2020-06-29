@@ -29,7 +29,7 @@ const promiseToTask = x => new Task((reject, resolve) => x.then(resolve).catch(r
 const taskToPromise = x => new Promise((resolve, reject) => x.fork(reject, resolve))
 ```
 
-## 使用示例（）
+## 使用示例（顺便复习前面的内容）
 
 下面来模拟一个场景：读取本地文件的内容，将之提交给服务器。
 1. 校验传入的文件路径（文件读取失败时，reject 一个 Maybe 包装值）
