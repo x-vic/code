@@ -47,7 +47,7 @@ class Observable {
 }
 ```
 
-## next 是对 resolve 的加维
+## next 是对 resolve 的升维
 
 对于 Task 而言，resolve 意味着该函子生命周期的结束。而放到一个应用中看，我们需要许许多多的 Task 来管理我们的应用。而经过 next 这个状态的扩展之后，前段中的很多场景都可以被抽象为 Observable 了。如：事件响应、ajax、websocket......  
 增加一个维度，表现力大增。  

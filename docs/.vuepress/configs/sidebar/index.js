@@ -38,7 +38,7 @@ module.exports = {
     {
       title: '前端',
       collapsable: false,
-      children: ['', 'upload',]
+      children: ['', 'upload', 'security',]
     },
   ],
   '/views/functional/': [
