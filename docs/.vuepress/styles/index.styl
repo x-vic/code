@@ -1,12 +1,14 @@
+// @import('./palette.styl')
+
 @font-face {
- font-family: 'dm';
- src: url('/code/fonts/dm-regular.ttf');
+  font-family: 'dm';
+  src: url('/code/fonts/JetBrainsMono-Regular.ttf');
       // url('/fonts/dm-italic.ttf');
 }
 
 @font-face {
- font-family: 'dm-italic';
- src: url('/code/fonts/dm-italic.ttf');
+  font-family: 'dm-italic';
+  src: url('/code/fonts/JetBrainsMono-Italic.ttf');
 }
 
 // @font-face {
@@ -16,12 +18,21 @@
 
 body, code, kbd, .line-number 
   font-family: dm, HYQH !important
+// .codecopy-enabled code
+//   font-family: dm !important
+//   font-size: 16px
+  
 
-code, kbd, .line-number 
-  font-size 16px !important
+// .codecopy-enabled .token
+//   display inline-block
+//   height 16px
+//   font-family: dm !important
+
+// code, kbd, .line-number 
+//   font-size 16px !important
 
 code > .comment
   font-family: dm-italic, HYQH !important
 
-div[class*='language-'] .highlight-lines, div[class*='language-'].line-numbers-mode .line-numbers-wrapper
-  line-height: 1.5
+// div[class*='language-'] .highlight-lines, div[class*='language-'].line-numbers-mode .line-numbers-wrapper
+//   line-height: 1.5

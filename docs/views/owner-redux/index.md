@@ -27,7 +27,7 @@ const createStore = (reducer, initState, enhancer) => {
     isDispatch = true
     store = reducer(store, action)
     isDispatch = false
-    listeners.forEach(listener => listener())
+    listeners.forEach(listener => listener(getState()))
     return action
   }
   const subscribe = (listener) => {
