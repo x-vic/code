@@ -17,7 +17,7 @@ module.exports = {
     {
       title: 'vue-next',
       collapsable: false,
-      children: ['',]
+      children: ['', 'createApp&mount']
     },
   ],
   '/views/owner-koa/': [
