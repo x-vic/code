@@ -6,6 +6,13 @@ module.exports = {
       children: ['reactive', 'handler', 'effect', 'createApp&mount', 'componentDetail']
     },
   ],
+  '/views/others/': [
+    {
+      title: 'others',
+      collapsable: false,
+      children: ['redux-observable']
+    },
+  ],
   '/views/owner-react/': [
     {
       title: 'react',
