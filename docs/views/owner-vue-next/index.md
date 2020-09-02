@@ -1,6 +1,6 @@
 ---
 title:  reactive && effect
-lang: zh-CN
+original: true
 ---
 
 ## 目标

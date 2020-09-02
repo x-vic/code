@@ -1,5 +1,6 @@
 ---
 title: createApp && mount
+original: true
 ---
 
 ![mount](/code/images/mount.svg)

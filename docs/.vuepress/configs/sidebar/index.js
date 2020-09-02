@@ -10,7 +10,7 @@ module.exports = {
     {
       title: 'others',
       collapsable: false,
-      children: ['redux-observable']
+      children: ['redux-observable', 'rxjs-hooks',]
     },
   ],
   '/views/owner-react/': [
