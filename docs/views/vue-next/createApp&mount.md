@@ -1,6 +1,6 @@
 ---
 title: createApp && mount
-lang: zh-CN
+original: true
 ---
 
 ![patch](/code/images/patch.svg)

@@ -29,3 +29,16 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: docs/.vuepress/dist
+      - name: 同步代码到码云
+        uses: wei/git-sync@v1
+        env:
+          SOURCE_REPO: "git@github.com:x-vic/code.git"
+          SOURCE_BRANCH: "refs/remotes/source/*"
+          DESTINATION_REPO: "git@gitee.com:x-vic/code.git"
+          DESTINATION_BRANCH: "refs/heads/*"
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+      # 码云点击部署
+      - name: 码云 pages 部署
+        run: npm run deploy ${{ secrets.GITEE_NAME }} ${{ secrets.GITEE_PWD }}

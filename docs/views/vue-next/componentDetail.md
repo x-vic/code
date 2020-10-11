@@ -1,6 +1,6 @@
 ---
 title: 组件渲染的细节
-lang: zh-CN
+original: true
 ---
 
 ## 得到组件的 render 方法

@@ -1,6 +1,6 @@
 ---
 title: reactive
-lang: zh-CN
+original: true
 ---
 
 ## usage

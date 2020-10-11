@@ -3,11 +3,20 @@ module.exports = [
     text: '源码',
     items: [
       {
-        text: 'vue-next',
+        text: 'vue',
         items: [
           {
             text: 'vue-next',
             link: '/views/vue-next/reactive'
+          }
+        ]
+      },
+      {
+        text: 'others',
+        items: [
+          {
+            text: 'others',
+            link: '/views/others/redux-observable'
           }
         ]
       }

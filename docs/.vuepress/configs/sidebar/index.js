@@ -6,6 +6,13 @@ module.exports = {
       children: ['reactive', 'handler', 'effect', 'createApp&mount', 'componentDetail']
     },
   ],
+  '/views/others/': [
+    {
+      title: 'others',
+      collapsable: false,
+      children: ['redux-observable', 'rxjs-hooks',]
+    },
+  ],
   '/views/owner-react/': [
     {
       title: 'react',
@@ -17,7 +24,7 @@ module.exports = {
     {
       title: 'vue-next',
       collapsable: false,
-      children: ['',]
+      children: ['', 'createApp&mount']
     },
   ],
   '/views/owner-koa/': [
@@ -38,14 +45,14 @@ module.exports = {
     {
       title: '前端',
       collapsable: false,
-      children: ['', 'upload', 'ts',]
+      children: ['', 'upload', 'security', 'webpack', 'ts',]
     },
   ],
   '/views/functional/': [
     {
       title: '函数式编程',
       collapsable: false,
-      children: ['', 'inputs', 'compose', 'functor', 'monad', 'applicative',]
+      children: ['', 'inputs', 'compose', 'functor', 'monad', 'applicative', 'transform', 'rxjs',]
     },
   ],
 };
