@@ -55,4 +55,11 @@ module.exports = {
       children: ['', 'inputs', 'compose', 'functor', 'monad', 'applicative', 'transform', 'rxjs',]
     },
   ],
+  '/views/algorithm/': [
+    {
+      title: '算法',
+      collapsable: false,
+      children: ['linked-list',]
+    },
+  ],
 };

@@ -55,5 +55,14 @@ module.exports = [
         link: '/views/functional/'
       },
     ]
-  }
+  },
+  {
+    text: '算法',
+    items: [
+      {
+        text: '算法',
+        link: '/views/algorithm/'
+      },
+    ]
+  },
 ];
