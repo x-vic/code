@@ -1,7 +1,7 @@
-const resolve = require('vuepress-theme-hope/resolve')
+const { config } = require("vuepress-theme-hope")
 const themeConfig = require('./configs/theme/')
 
-module.exports = resolve({
+module.exports = config({
   base: '/code/',
   title: 'code',
   description: 'code',

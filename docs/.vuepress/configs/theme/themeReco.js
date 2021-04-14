@@ -28,4 +28,5 @@ module.exports = {
     // 启用流程图功能
     flowchart: true,
   },
+  hostname: "https://x-vic.gitee.io/code/",
 }
