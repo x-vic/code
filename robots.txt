@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://x-vic.gitee.io/code/code/sitemap.xml
