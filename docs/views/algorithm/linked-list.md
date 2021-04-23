@@ -110,6 +110,26 @@ var reverseList = function(head) {
 2. [#92 给你单链表的头指针 head 和两个整数 left 和 right ，其中 left <= right 。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
 ```js
+var reverseBetween = function(head, m, n) {
+    if (m === 1) return reverseN(head, n)
+
+    // 相对于 head.next，翻转区间应该是 [m - 1, n - 1]
+    head.next = reverseBetween(head.next, m - 1, n - 1)
+    return head
+};
+
+let successor = null
+
+function reverseN(head, n) {
+  if (n === 1) {
+    successor = head.next
+    return head
+  }
+  const list = reverseN(head.next, n - 1)
+  head.next.next = head
+  head.next = successor
+  return list
+}
 ```
 
 3. [#25 K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
