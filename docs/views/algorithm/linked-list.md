@@ -135,6 +135,33 @@ function reverseN(head, n) {
 3. [#25 K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
 
 ```js
+function reverseKGroup(head, k) {
+  if (head == null) return null
+  let a = b = head
+  // 循环有两个目的：1、判断个数是否大于 k;2、得到翻转的终止节点
+  for (let i = 0; i < k; i++) {
+    // 个数不足，无需反转
+    if (b == null) return head
+    b = b.next
+  }
+  const newHead = reverse(a, b)
+  a.next = reverseKGroup(b, k)
+  return newHead
+}
+
+// 左闭右开，两个节点
+function reverse(head, end) {
+  if (head == null) return head
+  let prev = null, curr = head, next = head.next
+  // 与反转整个链表唯一的不同点
+  while (curr != end) {
+    curr.next = prev
+    prev = curr
+    curr = next
+    curr && (next = curr.next)
+  }
+  return prev
+}
 ```
 
 4. [#61 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
