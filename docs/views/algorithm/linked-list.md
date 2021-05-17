@@ -167,6 +167,27 @@ function reverse(head, end) {
 4. [#61 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
 
 ```js
+function rotateRight(head, k) {
+  if (head == null || head.next == null) return head
+  // 将链表变成一个环
+  let curr = head, size = 1
+  while (curr.next != null) {
+    curr = curr.next
+    size++
+  }
+  curr.next = head
+  let newHead = head, newTail = curr
+  // 计算旋转的步数
+  const times = size - (k % size)
+  // 一步一步走
+  for (let i = 0; i < times; i++) {
+    newHead = newHead.next
+    newTail = newTail.next
+  }
+  // 断开首尾的连接
+  newTail.next = null
+  return newHead
+}
 ```
 
 5. [#24 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs)
