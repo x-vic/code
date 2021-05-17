@@ -6,7 +6,7 @@
   <author>
     <name>Vic</name>
   </author>
-  <updated>2021-04-23T10:01:25.402Z</updated>
+  <updated>2021-05-17T06:58:03.430Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://x-vic.gitee.io/code/code/atom.xml"/>
   <link rel="alternate" href="https://x-vic.gitee.io/code/code/"/>
@@ -18,7 +18,7 @@
     <title type="html">首页</title>
     <id>https://x-vic.gitee.io/code/code/</id>
     <link href="https://x-vic.gitee.io/code/code/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<p><a href="./views/vue-next/reactive.html">Vue 源码学习</a> </p>
 ]]></content>
     <author>
@@ -27,14 +27,14 @@
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">Blob</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="blob-是什么"> Blob 是什么</h2>
 <blockquote>
 <p>Blob（Binary Large Object）表示二进制类型的大对象。在数据库管理系统中，将二进制数据存储为一个单一个体的集合。Blob 通常是影像、声音或多媒体文件。</p>
@@ -310,14 +310,14 @@ doc<span>.</span><span>addImage</span><span>(</span>imgData<span>,</span> <span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">web security</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/security/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/security/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="xss"> xss</h2>
 <p>跨站脚本攻击,英文全称是Cross Site Script，本来缩写是CSS,但是为了和层叠样式表(Cascading Style Sheet, CSS)有所区别,所以在安全领域叫做&quot;XSS&quot;。</p>
 <p><strong>XSS攻击,通常是指黑客通过&quot;HTML注入&quot;篡改了网页，插入了恶意的脚本，从而在用户浏览网页时，控制用户浏览器的一种攻击</strong>。在一开始，这种攻击的演示案例是跨域的，所以叫做&quot;跨站脚本&quot;。但是发展到今天。是否跨域已经不再重要。</p>
@@ -378,14 +378,14 @@ doc<span>.</span><span>addImage</span><span>(</span>imgData<span>,</span> <span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">TS 奇怪的符号</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/ts/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/ts/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="非空断言"> !非空断言</h2>
 <p>从含有 <code>undefined</code> <code>null</code> 的类型合集中去除 <code>undefined</code> <code>null</code>。</p>
 <div><pre><code><span>function</span> <span>myFunc</span><span>(</span>maybeString<span>:</span> <span>string</span> <span>|</span> <span>undefined</span> <span>|</span> <span>null</span><span>)</span> <span>{</span>
@@ -664,14 +664,14 @@ obj<span>.</span>customMethod<span>?.</span><span>(</span><span>)</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">文件上传</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/upload/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/upload/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="请求端"> 请求端</h2>
 <p>上传文件我们一般使用 <code>multipart/form-data</code>。这个规范首先需要请求类型（也就是 multipart/form-data）；然后就是一个 boundary（分隔符，文件分片上传的时候，需要用到）；然后就是声明内容的描述是 form-data 类型（字段名/文件名）。</p>
 <h3 id="发送-formdata-请求的几种方式"> 发送 formData 请求的几种方式</h3>
@@ -859,14 +859,14 @@ server<span>.</span><span>listen</span><span>(</span><span>3333</span><span>)</s
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">webpack</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/webpack/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/webpack/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<p>本文部分摘录<a href="https://segmentfault.com/a/1190000023016347" target="_blank" rel="noopener noreferrer">webpack 系列</a></p>
 <h2 id="loader"> loader</h2>
 <p>loader 文件处理器是一个 CommonJs 风格的函数，该函数接收一个 String/Buffer 类型的入参，并返回一个 String/Buffer 类型的返回值。</p>
@@ -1085,28 +1085,28 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">数据结构与算法</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <author>
       <name>Vic</name>
     </author>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">链表</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/linked-list/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/linked-list/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="链表访问"> 链表访问</h2>
 <ol>
 <li><a href="https://leetcode-cn.com/problems/linked-list-cycle/" target="_blank" rel="noopener noreferrer">#141 判断链表是否有环</a></li>
@@ -1230,8 +1230,35 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div><ol start="3">
 <li><a href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group/" target="_blank" rel="noopener noreferrer">#25 K个一组翻转链表</a></li>
 </ol>
-<div><pre><code></code></pre>
-<div></div></div><ol start="4">
+<div><pre><code><span>function</span> <span>reverseKGroup</span><span>(</span><span>head<span>,</span> k</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>head <span>==</span> <span>null</span><span>)</span> <span>return</span> <span>null</span>
+  <span>let</span> a <span>=</span> b <span>=</span> head
+  <span>// 循环有两个目的：1、判断个数是否大于 k;2、得到翻转的终止节点</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> k<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>// 个数不足，无需反转</span>
+    <span>if</span> <span>(</span>b <span>==</span> <span>null</span><span>)</span> <span>return</span> head
+    b <span>=</span> b<span>.</span>next
+  <span>}</span>
+  <span>const</span> newHead <span>=</span> <span>reverse</span><span>(</span>a<span>,</span> b<span>)</span>
+  a<span>.</span>next <span>=</span> <span>reverseKGroup</span><span>(</span>b<span>,</span> k<span>)</span>
+  <span>return</span> newHead
+<span>}</span>
+
+<span>// 左闭右开，两个节点</span>
+<span>function</span> <span>reverse</span><span>(</span><span>head<span>,</span> end</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>head <span>==</span> <span>null</span><span>)</span> <span>return</span> head
+  <span>let</span> prev <span>=</span> <span>null</span><span>,</span> curr <span>=</span> head<span>,</span> next <span>=</span> head<span>.</span>next
+  <span>// 与反转整个链表唯一的不同点</span>
+  <span>while</span> <span>(</span>curr <span>!=</span> end<span>)</span> <span>{</span>
+    curr<span>.</span>next <span>=</span> prev
+    prev <span>=</span> curr
+    curr <span>=</span> next
+    curr <span>&amp;&amp;</span> <span>(</span>next <span>=</span> curr<span>.</span>next<span>)</span>
+  <span>}</span>
+  <span>return</span> prev
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><ol start="4">
 <li><a href="https://leetcode-cn.com/problems/rotate-list/" target="_blank" rel="noopener noreferrer">#61 旋转链表</a></li>
 </ol>
 <div><pre><code></code></pre>
@@ -1259,14 +1286,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">队列</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/queue/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/queue/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li><a href="https://leetcode-cn.com/problems/partition-list" target="_blank" rel="noopener noreferrer">#86 分隔链表</a></li>
 </ol>
@@ -1309,14 +1336,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">applicative</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/applicative/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/applicative/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>applicative functor 是实现了 ap 方法的 pointed functor</p>
 </blockquote>
@@ -1388,14 +1415,14 @@ Either<span>.</span><span>of</span><span>(</span>createUser<span>)</span><span>.
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数的组合</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/compose/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/compose/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>实际生产中，我们经常需要对数据进行分阶段加工。在这个过程中，不可避免就会出现<code>a(b(c()))</code>的写法，这种写法不利于阅读以及修改，下面祭出函数组合的神器“compose”</p>
 </blockquote>
@@ -1414,14 +1441,14 @@ Either<span>.</span><span>of</span><span>(</span>createUser<span>)</span><span>.
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函子</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/functor/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/functor/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>我们已经知道如何书写函数式的程序了，即通过管道把数据在一系列纯函数间传递的程序。我们也知道了，这些程序就是声明式的行为规范。但是，控制流（control flow）、异常处理（error handling）、异步操作（asynchronous actions）和状态（state）呢？还有更棘手的作用（effects）呢？本章将对上述这些抽象概念赖以建立的基础作一番探究。</p>
 </blockquote>
@@ -1673,14 +1700,14 @@ removeNeedlessContainer <span>=</span> <span>compose</span><span>(</span><span>e
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数式编程</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<p>函数式编程总结（使用 javascript 语言）。预计会有一下几块：</p>
 <ol>
 <li>函数参数处理</li>
@@ -1697,14 +1724,14 @@ removeNeedlessContainer <span>=</span> <span>compose</span><span>(</span><span>e
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数输入处理</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/inputs/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/inputs/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="为什么要对函数的参数进行处理"> 为什么要对函数的参数进行处理</h2>
 <p>多个参数的输入会增加函数的复杂性，这违背了<strong>一个函数只做一件事</strong>。</p>
 <h2 id="如何减少函数参数"> 如何减少函数参数</h2>
@@ -1745,14 +1772,14 @@ removeNeedlessContainer <span>=</span> <span>compose</span><span>(</span><span>e
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">monad</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/monad/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/monad/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>monad 是可以变扁（flatten）的 pointed functor。</p>
 </blockquote>
@@ -1879,14 +1906,14 @@ Maybe<span>.</span><span>of</span><span>(</span><span>3</span><span>)</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">Observable</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/rxjs/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/rxjs/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>Observable 是 rx 体系中的一个概念，而 rx 本身就是一个很大的话题。但是这里我们只是单纯地从函数式编程的角度来理解 Observable</p>
 </blockquote>
@@ -1937,14 +1964,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函子之间的转换</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/transform/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/transform/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>我们在借用函子的各种能力的时候，不可避免会出现函子嵌套函子的情况。前面两章，我们分别介绍了 chain 以及 ap 工具来避免了这种嵌套的情况。</p>
 </blockquote>
@@ -2102,14 +2129,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">redux-observable 源码解读</title>
     <id>https://x-vic.gitee.io/code/code/views/others/redux-observable/</id>
     <link href="https://x-vic.gitee.io/code/code/views/others/redux-observable/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>redux-observable 是一个 redux 中间件。与多数 redux 中间件不同的是：其他中间件做的是改造 action 的工作，而 redux-observable 是在 action 的上层添加了一个对 action 流的监听，获取它所需要的 action，最后处理成不同的 action.</p>
 </blockquote>
@@ -2194,14 +2221,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">rxjs-hooks 源码解读</title>
     <id>https://x-vic.gitee.io/code/code/views/others/rxjs-hooks/</id>
     <link href="https://x-vic.gitee.io/code/code/views/others/rxjs-hooks/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<div><p>Tips</p>
 <p>这里一共 useObservable 以及 useEventCallback 两个 hook。<br>
 useObservable 从虚无中或是变化的 props 中得到衍生的数据。<br>
@@ -2303,14 +2330,14 @@ useEventCallback 从点击事件、变化的 props 中得到衍生数据。</p>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">koa</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-koa/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-koa/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>koa 给我印象比较深刻的是 ctx 以及中间件的洋葱模型，本次简单实现中，重点实现这两个特性</p>
 </blockquote>
@@ -2451,14 +2478,14 @@ module<span>.</span>exports <span>=</span> VKoa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">Concurrent Mode &amp; fiber</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/fiber/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/fiber/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<div><p>主旨</p>
 <p>上一版实现的 <code>render</code> 是通过递归的方式将 <code>dom</code> 层层插入，最终实现了虚拟dom到页面的渲染。<br>
 但是这么做的问题在于递归的过程无法中断，从而导致阻塞用户点击事件和渲染动画这些高优先级的操作，给人一种卡顿的感觉。<br>
@@ -2662,14 +2689,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数组件</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/functionComponent/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/functionComponent/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="函数组件是怎样转化的"> 函数组件是怎样转化的？</h2>
 <div><pre><code><span>/** @jsx Redact.createElement */</span>
 <span>function</span> <span>App</span><span>(</span><span>props</span><span>)</span> <span>{</span>
@@ -2772,14 +2799,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">createElement &amp;&amp; render</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="createelement"> createElement</h2>
 <p>将 <code>babel</code> 解析过后的参数处理成一个虚拟 <code>dom</code></p>
 <div><pre><code><span>export</span> <span>function</span> <span>createElement</span><span>(</span><span>type<span>,</span> props<span>,</span> <span>...</span>children</span><span>)</span> <span>{</span>
@@ -2828,14 +2855,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">reconciliation</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/reconciliation/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/reconciliation/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>目前我们只添加节点到 DOM，还没考虑更新和删除节点的情况。要处理这2种情况，需要对比上次渲染的 fiber 和当前渲染的 fiber 的差异，根据差异决定是更新还是删除节点。React 把这个过程叫 <code>Reconciliation</code>。</p>
 </blockquote>
@@ -3052,14 +3079,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">render &amp; commit</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/render&amp;commit/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/render&amp;commit/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="render"> render</h2>
 <div><div><br><br><div>&nbsp;</div><br><br><br><br><br><div>&nbsp;</div><br><br></div><pre><code><span>function</span> <span>render</span><span>(</span><span>element<span>,</span> container</span><span>)</span> <span>{</span>
   <span>// render 时记录 wipRoot</span>
@@ -3221,14 +3248,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">useState</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/useState/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/useState/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>注意以下代码省略了未变化部分</p>
 </blockquote>
@@ -3296,14 +3323,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">redux</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-redux/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-redux/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="createstore"> createStore</h2>
 <p>创建 store 核心对象</p>
 <div><pre><code><span>const</span> <span>createStore</span> <span>=</span> <span>(</span><span>reducer<span>,</span> initState<span>,</span> enhancer</span><span>)</span> <span>=></span> <span>{</span>
@@ -3413,14 +3440,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">react-redux</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-redux/react-redux/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-redux/react-redux/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="用法"> 用法</h2>
 <p>看看 react-redux 有两个重要的 API 的用法：</p>
 <div><pre><code><span>// Provider</span>
@@ -3520,14 +3547,14 @@ ReactDOM<span>.</span><span>render</span><span>(</span><span>{</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">createApp &amp;&amp; mount</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-vue-next/createApp&amp;mount/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-vue-next/createApp&amp;mount/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/code/images/mount.svg" alt="mount"></p>
 <h2 id="本文目标"> 本文目标</h2>
 <p>简单实现 vue3 中的 <code>createApp</code> 和 <code>mount</code> 两个 API。虽然只有两个 API，但是这两个 API 实现了 vue3 根实例的创建、组件的解析、vnode 数的构建...<br>
@@ -3817,14 +3844,14 @@ ReactDOM<span>.</span><span>render</span><span>(</span><span>{</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">reactive &amp;&amp; effect</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-vue-next/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-vue-next/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="目标"> 目标</h2>
 <p>实现 vue-next 响应式模块中的两个 API : <code>reactive</code>、 <code>effect</code></p>
 <div><pre><code><span>var</span> obj <span>=</span> <span>reactive</span><span>(</span><span>{</span>
@@ -3934,14 +3961,14 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">组件渲染的细节</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/componentDetail/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/componentDetail/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="得到组件的-render-方法"> 得到组件的 render 方法</h2>
 <blockquote>
 <p>在 mountComponent 的时候（setupRenderEffect 之前），vue 会 setupComponent(instance)</p>
@@ -4171,14 +4198,14 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">createApp &amp;&amp; mount</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/createApp&amp;mount/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/createApp&amp;mount/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/code/images/patch.svg" alt="patch"></p>
 <h2 id="createapp"> createApp</h2>
 <ol>
@@ -4573,14 +4600,14 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">effect</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/effect/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/effect/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<p>vue-next 中的依赖收集通过显式调用它提供的<code>effect</code>方法来启动。</p>
 <h2 id="usage"> usage</h2>
 <div><pre><code><span>const</span> <span>{</span> reactive<span>,</span> effect <span>}</span> <span>from</span> 'vue
@@ -4817,14 +4844,14 @@ obj<span>.</span>foo<span>++</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">handlers</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/handler/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/handler/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="mutablehandlers-常规对象使用的-handler"> mutableHandlers 常规对象使用的 handler</h2>
 <h3 id="creategetter"> createGetter</h3>
 <p><code>Reflect</code>将一些明显属于语言内部的方法(Object.defineProperty)，放到 Reflect 中，作为它的静态方法。</p>
@@ -4909,14 +4936,14 @@ obj<span>.</span>foo<span>++</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">reactive</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/reactive/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/reactive/"/>
-    <updated>2021-04-23T10:00:01.000Z</updated>
+    <updated>2021-05-17T06:56:40.000Z</updated>
     <content type="html"><![CDATA[<h2 id="usage"> usage</h2>
 <div><pre><code><span>import</span> <span>{</span> reactive <span>}</span> <span>from</span> <span>'vue'</span>
 
@@ -4969,7 +4996,7 @@ obj<span>.</span>foo<span>++</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-04-23T10:00:01.000Z</published>
+    <published>2021-05-17T06:56:40.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
 </feed>
