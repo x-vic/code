@@ -193,6 +193,18 @@ function rotateRight(head, k) {
 5. [#24 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs)
 
 ```js
+function swapPairs(head) {
+  // 递归终止条件
+  if (head == null || head.next == null) return head
+  // 最终要返回的 head
+  const newHead = head.next
+  // 下一次递归要用到的 head
+  const nextHead = head.next.next
+  // 两两交换
+  newHead.next = head
+  head.next = swapPairs(nextHead)
+  return newHead
+}
 ```
 
 
@@ -201,14 +213,34 @@ function rotateRight(head, k) {
 1. [#19 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)
 
 ```js
+function removeNthFromEnd(head, n) {
+  if (head == null) return head
+  let size = 1, curr = head
+  while (curr.next != null) {
+    curr = curr.next
+    size++
+  }
+  // 数量不足
+  if (size < n) return head
+  // 删除第一个（因为后面遍历是从 head 开始的）
+  if (size === n) return head.next
+  // 计算需要走多少步
+  const times = size - n
+  curr = head
+  let prev = null, next = curr.next
+  for (let i = 1; i <= times; i++) {
+    prev = curr
+    curr = next
+    next = next.next
+  }
+  // 只有唯一一个元素
+  if (prev == null) return null
+  prev.next = next
+  return head
+}
 ```
 
-2. [#83 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list)
-
-```js
-```
-
-3. [#82 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii)
+2. [#82 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii)
 
 ```js
 ```
