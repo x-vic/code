@@ -59,7 +59,7 @@ module.exports = {
     {
       title: '算法',
       collapsable: false,
-      children: ['', 'linked-list',]
+      children: ['', 'linked-list', 'queue', 'stack', 'tree', 'heap']
     },
   ],
 };
