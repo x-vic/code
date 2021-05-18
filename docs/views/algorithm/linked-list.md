@@ -243,4 +243,25 @@ function removeNthFromEnd(head, n) {
 2. [#82 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii)
 
 ```js
+function deleteDuplicates(head) {
+  if (head == null || head.next == null) return head
+  let prev = {}, curr = head, next = head.next
+  let newHead = null, newTail = null
+  while (curr != null) {
+    // 某个元素跟它的前面和后面都不相同，那么这个元素有效
+    if (prev.val !== curr.val && (next || {}).val !== curr.val) {
+      if (newHead == null) {
+        newHead = newTail = new ListNode(curr.val, null)
+      } else {
+        newTail.next = new ListNode(curr.val, null)
+        newTail = newTail.next
+      }
+    }
+    // 往后走
+    prev = curr
+    curr = next
+    curr && (next = curr.next)
+  }
+  return newHead
+}
 ```
