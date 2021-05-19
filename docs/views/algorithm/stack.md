@@ -5,6 +5,25 @@ title: 递归与栈
 1. [#946 验证栈序列](https://leetcode-cn.com/problems/validate-stack-sequences/)
 
 ```js
+function validateStackSequences(pushed, popped) {
+  // 两个长度不同，直接判 false
+  if (pushed.length !== popped.length) return false
+  const len = pushed.length
+  // 两个序列都是空
+  if (len === 0) return true
+  const stack = []
+  stack.push(pushed.shift())
+  for (let i = 0; i < 2 * len - 1; i++) {
+    // 判断栈顶元素与第二个序列的第一个元素是否相等
+    if (stack[stack.length - 1] === popped[0]) {
+      stack.pop()
+      popped.shift()
+    } else {
+      stack.push(pushed.shift())
+    }
+  }
+  return stack.length === 0
+}
 ```
 
 2. [#20 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
