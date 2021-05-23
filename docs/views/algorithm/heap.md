@@ -1,8 +1,8 @@
 ---
-title: 堆
+title: 并查集
 ---
 
-## 堆的基础应用
+## 基础应用
 
 1. [#剑指 Offer 40 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
 
