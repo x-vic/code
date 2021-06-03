@@ -57,9 +57,14 @@ module.exports = {
   ],
   '/views/algorithm/': [
     {
-      title: '算法',
+      title: '船长',
       collapsable: false,
       children: ['', 'linked-list', 'queue', 'stack', 'tree', 'heap', 'union-find', 'quick-sort']
+    },
+    {
+      title: '不系之舟',
+      collapsable: false,
+      children: ['reverse', 'dp']
     },
   ],
 };
