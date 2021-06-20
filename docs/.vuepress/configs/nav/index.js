@@ -60,9 +60,13 @@ module.exports = [
     text: '算法',
     items: [
       {
-        text: '算法',
+        text: '船长',
         link: '/views/algorithm/'
       },
-    ]
+      {
+        text: '不系之舟',
+        link: '/views/leetcode/'
+      },
+    ],
   },
 ];

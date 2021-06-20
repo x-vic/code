@@ -59,12 +59,14 @@ module.exports = {
     {
       title: '船长',
       collapsable: false,
-      children: ['', 'linked-list', 'queue', 'stack', 'tree', 'heap', 'union-find', 'quick-sort']
+      children: ['', 'queue', 'stack', 'tree', 'heap', 'union-find', 'quick-sort']
     },
+  ],
+  '/views/leetcode/': [
     {
       title: '不系之舟',
       collapsable: false,
-      children: ['reverse', 'dp']
+      children: ['', 'dp',]
     },
   ],
 };

@@ -4,8 +4,6 @@ title: 动态规划
 
 ## 单序列
 
-# 动态规划之单序列专题
-
 1. [完全平方数](https://leetcode-cn.com/problems/perfect-squares/)
 
 ```js
