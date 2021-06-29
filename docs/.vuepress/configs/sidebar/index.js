@@ -59,7 +59,7 @@ module.exports = {
     {
       title: '船长',
       collapsable: false,
-      children: ['', 'queue', 'stack', 'tree', 'heap', 'union-find', 'quick-sort']
+      children: ['', 'queue', 'stack', 'tree', 'heap', 'union-find', 'quick-sort', 'binary-search', 'hash-table', 'bfs&dfs']
     },
   ],
   '/views/leetcode/': [
