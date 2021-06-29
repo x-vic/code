@@ -6,7 +6,7 @@
   <author>
     <name>Vic</name>
   </author>
-  <updated>2021-06-20T14:16:10.606Z</updated>
+  <updated>2021-06-29T08:44:26.601Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://x-vic.gitee.io/code/code/atom.xml"/>
   <link rel="alternate" href="https://x-vic.gitee.io/code/code/"/>
@@ -18,7 +18,7 @@
     <title type="html">首页</title>
     <id>https://x-vic.gitee.io/code/code/</id>
     <link href="https://x-vic.gitee.io/code/code/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<p><a href="./views/vue-next/reactive.html">Vue 源码学习</a> </p>
 ]]></content>
     <author>
@@ -27,14 +27,14 @@
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">Blob</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="blob-是什么"> Blob 是什么</h2>
 <blockquote>
 <p>Blob（Binary Large Object）表示二进制类型的大对象。在数据库管理系统中，将二进制数据存储为一个单一个体的集合。Blob 通常是影像、声音或多媒体文件。</p>
@@ -143,7 +143,7 @@ downloadBtn<span>.</span><span>addEventListener</span><span>(</span><span>"click
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h3 id="blob-转换为-base64"> Blob 转换为 Base64</h3>
 <p><code>URL.createObjectURL</code> 的一个替代方法是，将 <code>Blob</code> 转换为 base64 编码的字符串。<code>Base64</code> 是一种基于 64 个可打印字符来表示二进制数据的表示方法。<br>
 利用 FileReader API，我们也可以方便的实现图片本地预览功能，具体代码如下：</p>
-<div><pre><code><span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>"</span>file<span>"</span></span> <span>accept</span><span><span>=</span><span>"</span>image/*<span>"</span></span> <span>onchange</span><span><span>=</span><span>"</span>loadFile(event)<span>"</span></span><span>></span></span>
+<div><pre><code><span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>"</span>file<span>"</span></span> <span>accept</span><span><span>=</span><span>"</span>image/*<span>"</span></span> <span><span>onchange</span><span><span>=</span><span>"</span><span><span>loadFile</span><span>(</span>event<span>)</span></span><span>"</span></span></span><span>></span></span>
 <span><span><span>&lt;</span>img</span> <span>id</span><span><span>=</span><span>"</span>output<span>"</span></span><span>/></span></span>
 
 <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
@@ -250,7 +250,7 @@ fileReader<span>.</span><span>readAsArrayBuffer</span><span>(</span>blob<span>)<
     <span><span><span>&lt;</span>title</span><span>></span></span>本地图片压缩<span><span><span>&lt;/</span>title</span><span>></span></span>
   <span><span><span>&lt;/</span>head</span><span>></span></span>
   <span><span><span>&lt;</span>body</span><span>></span></span>
-    <span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>"</span>file<span>"</span></span> <span>accept</span><span><span>=</span><span>"</span>image/*<span>"</span></span> <span>onchange</span><span><span>=</span><span>"</span>loadFile(event)<span>"</span></span> <span>/></span></span>
+    <span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>"</span>file<span>"</span></span> <span>accept</span><span><span>=</span><span>"</span>image/*<span>"</span></span> <span><span>onchange</span><span><span>=</span><span>"</span><span><span>loadFile</span><span>(</span>event<span>)</span></span><span>"</span></span></span> <span>/></span></span>
     <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>./compress.js<span>"</span></span><span>></span></span><span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
     <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
       <span>const</span> <span>loadFile</span> <span>=</span> <span>function</span> <span>(</span><span>event</span><span>)</span> <span>{</span>
@@ -310,14 +310,14 @@ doc<span>.</span><span>addImage</span><span>(</span>imgData<span>,</span> <span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">web security</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/security/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/security/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="xss"> xss</h2>
 <p>跨站脚本攻击,英文全称是Cross Site Script，本来缩写是CSS,但是为了和层叠样式表(Cascading Style Sheet, CSS)有所区别,所以在安全领域叫做&quot;XSS&quot;。</p>
 <p><strong>XSS攻击,通常是指黑客通过&quot;HTML注入&quot;篡改了网页，插入了恶意的脚本，从而在用户浏览网页时，控制用户浏览器的一种攻击</strong>。在一开始，这种攻击的演示案例是跨域的，所以叫做&quot;跨站脚本&quot;。但是发展到今天。是否跨域已经不再重要。</p>
@@ -378,14 +378,14 @@ doc<span>.</span><span>addImage</span><span>(</span>imgData<span>,</span> <span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">TS 奇怪的符号</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/ts/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/ts/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="非空断言"> !非空断言</h2>
 <p>从含有 <code>undefined</code> <code>null</code> 的类型合集中去除 <code>undefined</code> <code>null</code>。</p>
 <div><pre><code><span>function</span> <span>myFunc</span><span>(</span>maybeString<span>:</span> <span>string</span> <span>|</span> <span>undefined</span> <span>|</span> <span>null</span><span>)</span> <span>{</span>
@@ -509,14 +509,14 @@ obj<span>.</span>customMethod<span>?.</span><span>(</span><span>)</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h4 id="returntype-t-获取函数-t-的返回类型"> <code>ReturnType&lt;T&gt;</code> 获取函数 T 的返回类型</h4>
 <div><pre><code><span>// 实现</span>
-<span>type</span> <span>ReturnType<span>&lt;</span><span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span> infer <span>R</span> <span>?</span> <span>R</span> <span>:</span> <span>any</span>
+<span>type</span> <span>ReturnType<span>&lt;</span><span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span> <span>infer</span> <span>R</span> <span>?</span> <span>R</span> <span>:</span> <span>any</span>
 
 <span>// 示例</span>
 <span>type</span> <span><span>T0</span></span> <span>=</span> ReturnType<span>&lt;</span><span>(</span><span>)</span> <span>=></span><span>string</span><span>></span><span>;</span> <span>// string</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h4 id="instancetype-获取构造函数类型的实例类型"> <code>InstanceType</code> 获取构造函数类型的实例类型</h4>
 <div><pre><code><span>// 实现</span>
-<span>type</span> <span>InstanceType<span>&lt;</span><span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span> infer <span>R</span> <span>?</span> <span>R</span> <span>:</span> <span>any</span>
+<span>type</span> <span>InstanceType<span>&lt;</span><span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span> <span>infer</span> <span>R</span> <span>?</span> <span>R</span> <span>:</span> <span>any</span>
 
 <span>// 示例</span>
 <span>class</span> <span><span>C</span></span> <span>{</span>
@@ -545,18 +545,18 @@ obj<span>.</span>customMethod<span>?.</span><span>(</span><span>)</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div><h4 id="parameters-t-获得函数的参数类型组成的元组类型"> <code>Parameters&lt;T&gt;</code> 获得函数的参数类型组成的元组类型</h4>
 <div><pre><code><span>// 实现</span>
-<span>type</span> <span>Parameters<span>&lt;</span><span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> infer <span>P</span><span>)</span> <span>=></span> <span>any</span>
+<span>type</span> <span>Parameters<span>&lt;</span><span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>infer</span> <span>P</span><span>)</span> <span>=></span> <span>any</span>
   <span>?</span> <span>P</span> <span>:</span> <span>never</span>
 
 <span>// 示例</span>
 <span>type</span> <span><span>A</span></span> <span>=</span> Parameters<span>&lt;</span><span>(</span><span>)</span> <span>=></span><span>void</span><span>></span><span>;</span> <span>// []</span>
-<span>type</span> <span><span>B</span></span> <span>=</span> Parameters<span>&lt;</span>typeofArray<span>.</span>isArray<span>></span><span>;</span> <span>// [any]</span>
-<span>type</span> <span><span>C</span></span> <span>=</span> Parameters<span>&lt;</span>typeofparseInt<span>></span><span>;</span> <span>// [string, (number | undefined)?]</span>
-<span>type</span> <span><span>D</span></span> <span>=</span> Parameters<span>&lt;</span>typeofMath<span>.</span>max<span>></span><span>;</span> <span>// number[]</span>
+<span>type</span> <span><span>B</span></span> <span>=</span> Parameters<span>&lt;</span><span>type</span>ofArray<span>.</span>isArray<span>></span><span>;</span> <span>// [any]</span>
+<span>type</span> <span><span>C</span></span> <span>=</span> Parameters<span>&lt;</span><span>type</span>ofparseInt<span>></span><span>;</span> <span>// [string, (number | undefined)?]</span>
+<span>type</span> <span><span>D</span></span> <span>=</span> Parameters<span>&lt;</span><span>type</span>ofMath<span>.</span>max<span>></span><span>;</span> <span>// number[]</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><h4 id="constructorparameters-t-提取构造函数类型的所有参数类型"> <code>ConstructorParameters&lt;T&gt;</code> 提取构造函数类型的所有参数类型</h4>
 <div><pre><code><span>// 实现</span>
-<span>type</span> <span>ConstructorParameters<span>&lt;</span><span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> infer <span>P</span><span>)</span> <span>=></span> <span>any</span> <span>?</span> <span>P</span> <span>:</span> <span>never</span>
+<span>type</span> <span>ConstructorParameters<span>&lt;</span><span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>)</span> <span>=></span></span> <span>any</span><span>></span> <span>=</span> <span>T</span> <span>extendsnew</span> <span>(</span><span>...</span>args<span>:</span> <span>infer</span> <span>P</span><span>)</span> <span>=></span> <span>any</span> <span>?</span> <span>P</span> <span>:</span> <span>never</span>
 
 <span>// 示例</span>
 <span>type</span> <span><span>A</span></span> <span>=</span> ConstructorParameters<span>&lt;</span>ErrorConstructor<span>></span><span>;</span> <span>// [(string | undefined)?]</span>
@@ -589,7 +589,7 @@ obj<span>.</span>customMethod<span>?.</span><span>(</span><span>)</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h4 id="infer-在条件类型语句中-可以用-infer-声明一个类型变量并且对它进行使用"> <code>infer</code> 在条件类型语句中，可以用 infer 声明一个类型变量并且对它进行使用</h4>
 <div><pre><code><span>// 提取 T 函数的返回值类型</span>
-<span>type</span> <span>ReturnType<span>&lt;</span><span>T</span><span>></span></span> <span>=</span> <span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>[</span><span>]</span><span>)</span> <span>=></span> infer <span>R</span> 
+<span>type</span> <span>ReturnType<span>&lt;</span><span>T</span><span>></span></span> <span>=</span> <span>T</span> <span>extends</span> <span>(</span><span>...</span>args<span>:</span> <span>any</span><span>[</span><span>]</span><span>)</span> <span>=></span> <span>infer</span> <span>R</span> 
   <span>?</span> <span>R</span> 
   <span>:</span> <span>any</span>
 </code></pre>
@@ -664,14 +664,14 @@ obj<span>.</span>customMethod<span>?.</span><span>(</span><span>)</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">文件上传</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/upload/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/upload/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="请求端"> 请求端</h2>
 <p>上传文件我们一般使用 <code>multipart/form-data</code>。这个规范首先需要请求类型（也就是 multipart/form-data）；然后就是一个 boundary（分隔符，文件分片上传的时候，需要用到）；然后就是声明内容的描述是 form-data 类型（字段名/文件名）。</p>
 <h3 id="发送-formdata-请求的几种方式"> 发送 formData 请求的几种方式</h3>
@@ -859,14 +859,14 @@ server<span>.</span><span>listen</span><span>(</span><span>3333</span><span>)</s
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">webpack</title>
     <id>https://x-vic.gitee.io/code/code/views/JS/webpack/</id>
     <link href="https://x-vic.gitee.io/code/code/views/JS/webpack/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<p>本文部分摘录<a href="https://segmentfault.com/a/1190000023016347" target="_blank" rel="noopener noreferrer">webpack 系列</a></p>
 <h2 id="loader"> loader</h2>
 <p>loader 文件处理器是一个 CommonJs 风格的函数，该函数接收一个 String/Buffer 类型的入参，并返回一个 String/Buffer 类型的返回值。</p>
@@ -1085,14 +1085,620 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
+    <rights>Copyright by Vic</rights>
+  </entry>
+  <entry>
+    <title type="html">深搜与广搜</title>
+    <id>https://x-vic.gitee.io/code/code/views/algorithm/bfs&amp;dfs/</id>
+    <link href="https://x-vic.gitee.io/code/code/views/algorithm/bfs&amp;dfs/"/>
+    <updated>2021-06-29T08:42:49.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="基础应用"> 基础应用</h2>
+<ol>
+<li><a href="https://leetcode-cn.com/problems/cousins-in-binary-tree/" target="_blank" rel="noopener noreferrer">993. 二叉树的堂兄弟节点</a></li>
+</ol>
+<p>深搜解法</p>
+<div><pre><code><span>function</span> <span>isCousins</span><span>(</span><span>root<span>,</span> x<span>,</span> y</span><span>)</span> <span>{</span>
+  <span>const</span> <span>[</span>xLevel<span>,</span> xFather<span>]</span> <span>=</span> <span>findLevelAndFather</span><span>(</span>root<span>,</span> x<span>)</span>
+  <span>const</span> <span>[</span>yLevel<span>,</span> yFather<span>]</span> <span>=</span> <span>findLevelAndFather</span><span>(</span>root<span>,</span> y<span>)</span>
+  <span>// 层级相同，并且父亲不同就是堂兄弟</span>
+  <span>if</span> <span>(</span>xLevel <span>===</span> yLevel <span>&amp;&amp;</span> xFather <span>!==</span> yFather<span>)</span> <span>return</span> <span>true</span>
+  <span>return</span> <span>false</span>
+<span>}</span>
+
+<span>// 寻找目标元素的层级以及它的父亲</span>
+<span>function</span> <span>findLevelAndFather</span><span>(</span><span>node<span>,</span> val<span>,</span> level <span>=</span> <span>0</span><span>,</span> father <span>=</span> <span>null</span></span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>node <span>==</span> <span>null</span><span>)</span> <span>return</span> <span>[</span><span>-</span><span>1</span><span>,</span> node<span>]</span>
+  <span>if</span> <span>(</span>node<span>.</span>val <span>===</span> val<span>)</span> <span>return</span> <span>[</span>level<span>,</span> father<span>]</span>
+  <span>const</span> leftRes <span>=</span> <span>findLevelAndFather</span><span>(</span>node<span>.</span>left<span>,</span> val<span>,</span> level <span>+</span> <span>1</span><span>,</span> node<span>)</span>
+  <span>const</span> rightRes <span>=</span> <span>findLevelAndFather</span><span>(</span>node<span>.</span>right<span>,</span> val<span>,</span> level <span>+</span> <span>1</span><span>,</span> node<span>)</span>
+  <span>if</span> <span>(</span>leftRes<span>[</span><span>0</span><span>]</span> <span>!=</span> <span>-</span><span>1</span><span>)</span> <span>return</span> leftRes
+  <span>return</span> rightRes
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><p>广搜解法</p>
+<div><pre><code><span>function</span> <span>isCousins</span><span>(</span><span>root<span>,</span> x<span>,</span> y</span><span>)</span> <span>{</span>
+  <span>const</span> <span>[</span>xLevel<span>,</span> xFather<span>]</span> <span>=</span> <span>findLevelAndFather</span><span>(</span>root<span>,</span> x<span>)</span>
+  <span>const</span> <span>[</span>yLevel<span>,</span> yFather<span>]</span> <span>=</span> <span>findLevelAndFather</span><span>(</span>root<span>,</span> y<span>)</span>
+  <span>// 层级相同，并且父亲不同就是堂兄弟</span>
+  <span>if</span> <span>(</span>xLevel <span>===</span> yLevel <span>&amp;&amp;</span> xFather <span>!==</span> yFather<span>)</span> <span>return</span> <span>true</span>
+  <span>return</span> <span>false</span>
+<span>}</span>
+
+<span>// 广度优先搜索实现（状态存入层级信息）</span>
+<span>function</span> <span>findLevelAndFather</span><span>(</span><span>node<span>,</span> val</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>node <span>==</span> <span>null</span><span>)</span> <span>return</span> <span>[</span><span>-</span><span>1</span><span>,</span> node<span>]</span>
+  <span>const</span> queue <span>=</span> <span>[</span><span>[</span><span>null</span><span>,</span> node<span>,</span> <span>0</span><span>]</span><span>]</span>
+  <span>while</span> <span>(</span>queue<span>.</span>length<span>)</span> <span>{</span>
+    <span>const</span> <span>[</span>father<span>,</span> item<span>,</span> level<span>]</span> <span>=</span> queue<span>.</span><span>shift</span><span>(</span><span>)</span>
+    <span>if</span> <span>(</span>item <span>==</span> <span>null</span><span>)</span> <span>continue</span>
+    <span>if</span> <span>(</span>item<span>.</span>val <span>===</span> val<span>)</span> <span>return</span> <span>[</span>level<span>,</span> father<span>]</span>
+    <span>// 将节点的父亲信息一起放入队列中</span>
+    queue<span>.</span><span>push</span><span>(</span><span>[</span>item<span>,</span> item<span>.</span>left<span>,</span> level <span>+</span> <span>1</span><span>]</span><span>,</span> <span>[</span>item<span>,</span> item<span>.</span>right<span>,</span> level <span>+</span> <span>1</span><span>]</span><span>)</span>
+  <span>}</span>
+  <span>return</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>null</span><span>]</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><h2 id="bfs"> BFS</h2>
+<ol>
+<li><a href="https://leetcode-cn.com/problems/01-matrix/" target="_blank" rel="noopener noreferrer">542. 01 矩阵</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>updateMatrix</span><span>(</span><span>matrix</span><span>)</span> <span>{</span>
+  <span>const</span> col <span>=</span> matrix<span>.</span>length<span>,</span> row <span>=</span> matrix<span>[</span><span>0</span><span>]</span><span>.</span>length
+  <span>const</span> visited <span>=</span> <span>Array</span><span>(</span>col<span>)</span><span>.</span><span>fill</span><span>(</span><span>null</span><span>)</span><span>.</span><span>map</span><span>(</span><span>(</span><span>)</span> <span>=></span> <span>Array</span><span>(</span>row<span>)</span><span>.</span><span>fill</span><span>(</span><span>false</span><span>)</span><span>)</span>
+  <span>const</span> directions <span>=</span> <span>[</span><span>[</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>1</span><span>]</span><span>,</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>-</span><span>1</span><span>]</span><span>]</span>
+  <span>const</span> queue <span>=</span> <span>[</span><span>]</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> col<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> row<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+      <span>if</span> <span>(</span>matrix<span>[</span>i<span>]</span><span>[</span>j<span>]</span> <span>===</span> <span>0</span><span>)</span> <span>{</span>
+        <span>// 添加状态：坐标 + 步数</span>
+        queue<span>.</span><span>push</span><span>(</span><span>[</span>i<span>,</span> j<span>,</span> <span>0</span><span>]</span><span>)</span>
+      <span>}</span>
+    <span>}</span>
+  <span>}</span>
+  <span>while</span> <span>(</span>queue<span>.</span>length<span>)</span> <span>{</span>
+    <span>const</span> <span>[</span>_x<span>,</span> _y<span>,</span> step<span>]</span> <span>=</span> queue<span>.</span><span>shift</span><span>(</span><span>)</span>
+    <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> directions<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+      <span>const</span> x <span>=</span> _x <span>+</span> directions<span>[</span>i<span>]</span><span>[</span><span>0</span><span>]</span><span>,</span> y <span>=</span> _y <span>+</span> directions<span>[</span>i<span>]</span><span>[</span><span>1</span><span>]</span>
+      <span>if</span> <span>(</span>x <span>&lt;</span> <span>0</span> <span>||</span> x <span>>=</span> col<span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>y <span>&lt;</span> <span>0</span> <span>||</span> y <span>>=</span> row<span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>matrix<span>[</span>x<span>]</span><span>[</span>y<span>]</span> <span>===</span> <span>0</span><span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>visited<span>[</span>x<span>]</span><span>[</span>y<span>]</span><span>)</span> <span>continue</span>
+      matrix<span>[</span>x<span>]</span><span>[</span>y<span>]</span> <span>=</span> step <span>+</span> <span>1</span>
+      queue<span>.</span><span>push</span><span>(</span><span>[</span>x<span>,</span> y<span>,</span> step <span>+</span> <span>1</span><span>]</span><span>)</span>
+      visited<span>[</span>x<span>]</span><span>[</span>y<span>]</span> <span>=</span> <span>true</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> matrix
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div><ol start="2">
+<li><a href="https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/" target="_blank" rel="noopener noreferrer">1091. 二进制矩阵中的最短路径</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>shortestPathBinaryMatrix</span><span>(</span><span>grid</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>grid<span>[</span><span>0</span><span>]</span><span>[</span><span>0</span><span>]</span> <span>===</span> <span>1</span><span>)</span> <span>return</span> <span>-</span><span>1</span>
+  <span>const</span> col <span>=</span> grid<span>.</span>length<span>,</span> row <span>=</span> grid<span>[</span><span>0</span><span>]</span><span>.</span>length
+  <span>const</span> visited <span>=</span> <span>Array</span><span>(</span>col<span>)</span><span>.</span><span>fill</span><span>(</span><span>null</span><span>)</span><span>.</span><span>map</span><span>(</span><span>(</span><span>)</span> <span>=></span> <span>Array</span><span>(</span>row<span>)</span><span>.</span><span>fill</span><span>(</span><span>false</span><span>)</span><span>)</span>
+  <span>const</span> directions <span>=</span> <span>[</span><span>[</span><span>0</span><span>,</span> <span>1</span><span>]</span><span>,</span> <span>[</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>-</span><span>1</span><span>]</span><span>,</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>1</span><span>,</span> <span>1</span><span>]</span><span>,</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>-</span><span>1</span><span>]</span><span>,</span> <span>[</span><span>1</span><span>,</span> <span>-</span><span>1</span><span>]</span><span>,</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>1</span><span>]</span><span>]</span>
+  <span>// 定义状态：坐标，路径</span>
+  <span>const</span> queue <span>=</span> <span>[</span><span>[</span><span>0</span><span>,</span> <span>0</span><span>,</span> <span>1</span><span>]</span><span>]</span>
+  
+  <span>while</span> <span>(</span>queue<span>.</span>length<span>)</span> <span>{</span>
+    <span>const</span> <span>[</span>_x<span>,</span> _y<span>,</span> step<span>]</span> <span>=</span> queue<span>.</span><span>shift</span><span>(</span><span>)</span>
+    <span>if</span> <span>(</span>_x <span>===</span> col <span>-</span> <span>1</span> <span>&amp;&amp;</span> _y <span>===</span> row <span>-</span> <span>1</span> <span>)</span> <span>return</span> step
+    <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> directions<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+      <span>const</span> x <span>=</span> _x <span>+</span> directions<span>[</span>i<span>]</span><span>[</span><span>0</span><span>]</span><span>,</span> y <span>=</span> _y <span>+</span> directions<span>[</span>i<span>]</span><span>[</span><span>1</span><span>]</span>
+      <span>if</span> <span>(</span>x <span>&lt;</span> <span>0</span> <span>||</span> x <span>>=</span> col<span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>y <span>&lt;</span> <span>0</span> <span>||</span> y <span>>=</span> row<span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>grid<span>[</span>x<span>]</span><span>[</span>y<span>]</span> <span>===</span> <span>1</span><span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>visited<span>[</span>x<span>]</span><span>[</span>y<span>]</span><span>)</span> <span>continue</span>
+      queue<span>.</span><span>push</span><span>(</span><span>[</span>x<span>,</span> y<span>,</span> step <span>+</span> <span>1</span><span>]</span><span>)</span>
+      visited<span>[</span>x<span>]</span><span>[</span>y<span>]</span> <span>=</span> <span>true</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>return</span> <span>-</span><span>1</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br></div></div><ol start="3">
+<li><a href="https://leetcode-cn.com/problems/open-the-lock/" target="_blank" rel="noopener noreferrer">752. 打开转盘锁</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>openLock</span><span>(</span><span>deadends<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>// 将死锁放进集合中</span>
+  <span>const</span> deads <span>=</span> <span>new</span> <span>Set</span><span>(</span>deadends<span>)</span>
+  <span>const</span> directions <span>=</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>1</span><span>]</span>
+  <span>if</span> <span>(</span>deads<span>.</span><span>has</span><span>(</span><span>'0000'</span><span>)</span><span>)</span> <span>return</span> <span>-</span><span>1</span>
+  deads<span>.</span><span>add</span><span>(</span><span>'0000'</span><span>)</span>
+  <span>const</span> queue <span>=</span> <span>[</span><span>[</span><span>'0000'</span><span>,</span> <span>0</span><span>]</span><span>]</span>
+  
+  <span>while</span> <span>(</span>queue<span>.</span>length<span>)</span> <span>{</span>
+    <span>const</span> <span>[</span>curr<span>,</span> step<span>]</span> <span>=</span> queue<span>.</span><span>shift</span><span>(</span><span>)</span>
+    <span>// 达到要求，返回结果</span>
+    <span>if</span> <span>(</span>curr <span>===</span> target<span>)</span> <span>return</span> step
+    <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>4</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
+      <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> directions<span>.</span>length<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+        <span>const</span> state <span>=</span> curr<span>.</span><span>substring</span><span>(</span><span>0</span><span>,</span> i<span>)</span> <span>+</span> <span>getNext</span><span>(</span>curr<span>[</span>i<span>]</span><span>,</span> directions<span>[</span>j<span>]</span><span>)</span> <span>+</span> curr<span>.</span><span>substring</span><span>(</span>i <span>+</span> <span>1</span><span>)</span>
+        <span>if</span> <span>(</span>deads<span>.</span><span>has</span><span>(</span>state<span>)</span><span>)</span> <span>continue</span>
+        deads<span>.</span><span>add</span><span>(</span>state<span>)</span>
+        queue<span>.</span><span>push</span><span>(</span><span>[</span>state<span>,</span> step <span>+</span> <span>1</span><span>]</span><span>)</span>
+      <span>}</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>return</span> <span>-</span><span>1</span>
+<span>}</span>
+
+<span>function</span> <span>getNext</span><span>(</span><span>c<span>,</span> direction</span><span>)</span> <span>{</span>
+  <span>const</span> res <span>=</span> <span>Number</span><span>(</span>c<span>)</span> <span>+</span> direction
+  <span>if</span> <span>(</span>res <span>&lt;</span> <span>0</span><span>)</span> <span>return</span> <span>9</span>
+  <span>if</span> <span>(</span>res <span>></span> <span>9</span><span>)</span> <span>return</span> <span>0</span>
+  <span>return</span> res
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div><ol start="4">
+<li><a href="https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 13. 机器人的运动范围</a></li>
+</ol>
+<div><pre><code><span>const</span> getSum <span>=</span> <span>(</span><span>(</span><span>buff</span><span>)</span> <span>=></span> <span>{</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>10</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> <span>10</span><span>;</span> j<span>++</span><span>)</span> <span>{</span>
+      buff<span>[</span>i <span>*</span> <span>10</span> <span>+</span> j<span>]</span> <span>=</span> i <span>+</span> j
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>(</span><span>num</span><span>)</span> <span>=></span> buff<span>[</span>num<span>]</span>
+<span>}</span><span>)</span><span>(</span><span>[</span><span>]</span><span>)</span>
+
+<span>function</span> <span>movingCount</span><span>(</span><span>m<span>,</span> n<span>,</span> k</span><span>)</span> <span>{</span>
+  <span>const</span> directions <span>=</span> <span>[</span><span>[</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>1</span><span>]</span><span>,</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>-</span><span>1</span><span>]</span><span>]</span>
+  <span>const</span> visited <span>=</span> <span>[</span><span>]</span>
+  <span>const</span> queue <span>=</span> <span>[</span><span>[</span><span>0</span><span>,</span> <span>0</span><span>]</span><span>]</span>
+  visited<span>[</span><span>0</span><span>]</span> <span>=</span> <span>true</span>
+
+  <span>let</span> ans <span>=</span> <span>0</span>
+
+  <span>while</span> <span>(</span>queue<span>.</span>length<span>)</span> <span>{</span>
+    <span>const</span> <span>[</span>_x<span>,</span> _y<span>]</span> <span>=</span> queue<span>.</span><span>shift</span><span>(</span><span>)</span>
+    ans<span>++</span>
+    <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> directions<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+      <span>const</span> x <span>=</span> _x <span>+</span> directions<span>[</span>i<span>]</span><span>[</span><span>0</span><span>]</span><span>,</span> y <span>=</span> _y <span>+</span> directions<span>[</span>i<span>]</span><span>[</span><span>1</span><span>]</span>
+      <span>if</span> <span>(</span>x <span>&lt;</span> <span>0</span> <span>||</span> x <span>>=</span> m<span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>y <span>&lt;</span> <span>0</span> <span>||</span> y <span>>=</span> n<span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>visited<span>[</span>x <span>*</span> n <span>+</span> y<span>]</span><span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span><span>getSum</span><span>(</span>x<span>)</span> <span>+</span> <span>getSum</span><span>(</span>y<span>)</span> <span>></span> k<span>)</span> <span>continue</span>
+      visited<span>[</span>x <span>*</span> n <span>+</span> y<span>]</span> <span>=</span> <span>true</span>
+      queue<span>.</span><span>push</span><span>(</span><span>[</span>x<span>,</span> y<span>]</span><span>)</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>return</span> ans
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br></div></div><ol start="5">
+<li><a href="https://leetcode-cn.com/problems/sliding-puzzle/" target="_blank" rel="noopener noreferrer">773. 滑动谜题</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>slidingPuzzle</span><span>(</span><span>board</span><span>)</span> <span>{</span>
+  <span>const</span> col <span>=</span> board<span>.</span>length<span>,</span> row <span>=</span> board<span>[</span><span>0</span><span>]</span><span>.</span>length
+  <span>const</span> directions <span>=</span> <span>[</span><span>[</span><span>0</span><span>,</span> <span>1</span><span>]</span><span>,</span> <span>[</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>-</span><span>1</span><span>]</span><span>,</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>]</span>
+  <span>const</span> target <span>=</span> <span>'123450'</span>
+  <span>const</span> visited <span>=</span> <span>new</span> <span>Set</span><span>(</span><span>)</span>
+  <span>const</span> queue <span>=</span> <span>[</span><span>]</span>
+  <span>// 找到 board 中为 0 的位置</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> board<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> board<span>[</span><span>0</span><span>]</span><span>.</span>length<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+      <span>if</span> <span>(</span>board<span>[</span>i<span>]</span><span>[</span>j<span>]</span> <span>===</span> <span>0</span><span>)</span> <span>{</span>
+        queue<span>.</span><span>push</span><span>(</span><span>[</span>i<span>,</span> j<span>,</span> <span>0</span><span>,</span> board<span>,</span> <span>toString</span><span>(</span>board<span>)</span><span>]</span><span>)</span>
+        visited<span>.</span><span>add</span><span>(</span><span>toString</span><span>(</span>board<span>)</span><span>)</span>
+        <span>break</span>
+      <span>}</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>while</span> <span>(</span>queue<span>.</span>length<span>)</span> <span>{</span>
+    <span>const</span> <span>[</span>_x<span>,</span> _y<span>,</span> step<span>,</span> _board<span>,</span> strBoard<span>]</span> <span>=</span> queue<span>.</span><span>shift</span><span>(</span><span>)</span>
+
+    <span>if</span> <span>(</span>target <span>===</span> strBoard<span>)</span> <span>return</span> step
+    <span>for</span> <span>(</span><span>const</span> <span>[</span>m<span>,</span> n<span>]</span> <span>of</span> directions<span>)</span> <span>{</span>
+      <span>const</span> x <span>=</span> _x <span>+</span> m<span>,</span> y <span>=</span> _y <span>+</span> n
+      <span>if</span> <span>(</span>x <span>&lt;</span> <span>0</span> <span>||</span> x <span>>=</span> col<span>)</span> <span>continue</span>
+      <span>if</span> <span>(</span>y <span>&lt;</span> <span>0</span> <span>||</span> y <span>>=</span> row<span>)</span> <span>continue</span>
+      <span>const</span> newBoard <span>=</span> <span>cloneArr</span><span>(</span>_board<span>,</span> x<span>,</span> y<span>,</span> _x<span>,</span> _y<span>)</span>
+      <span>const</span> strNewBoard <span>=</span> <span>toString</span><span>(</span>newBoard<span>)</span>
+      <span>if</span> <span>(</span>visited<span>.</span><span>has</span><span>(</span>strNewBoard<span>)</span><span>)</span> <span>continue</span>
+      queue<span>.</span><span>push</span><span>(</span><span>[</span>x<span>,</span> y<span>,</span> step <span>+</span> <span>1</span><span>,</span> newBoard<span>,</span> strNewBoard<span>]</span><span>)</span>
+      visited<span>.</span><span>add</span><span>(</span>strNewBoard<span>)</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>return</span> <span>-</span><span>1</span>
+<span>}</span>
+
+<span>function</span> <span>cloneArr</span><span>(</span><span>arr<span>,</span> x <span>=</span> <span>0</span><span>,</span> y <span>=</span> <span>0</span><span>,</span> _x <span>=</span> <span>0</span><span>,</span> _y <span>=</span> <span>0</span></span><span>)</span> <span>{</span>
+  <span>const</span> res <span>=</span> arr<span>.</span><span>map</span><span>(</span><span>item</span> <span>=></span> <span>[</span><span>...</span>item<span>]</span><span>)</span>
+  <span>;</span><span>[</span>res<span>[</span>x<span>]</span><span>[</span>y<span>]</span><span>,</span> res<span>[</span>_x<span>]</span><span>[</span>_y<span>]</span><span>]</span> <span>=</span> <span>[</span>res<span>[</span>_x<span>]</span><span>[</span>_y<span>]</span><span>,</span> res<span>[</span>x<span>]</span><span>[</span>y<span>]</span><span>]</span>
+  <span>return</span> res
+<span>}</span>
+
+<span>function</span> <span>toString</span><span>(</span><span>arr</span><span>)</span> <span>{</span>
+  <span>return</span> arr<span>.</span><span>reduce</span><span>(</span><span>(</span><span>prev<span>,</span> curr</span><span>)</span> <span>=></span> <span>[</span><span>...</span>prev<span>,</span> <span>...</span>curr<span>]</span><span>,</span> <span>[</span><span>]</span><span>)</span><span>.</span><span>join</span><span>(</span><span>''</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br></div></div><h2 id="dfs"> DFS</h2>
+<ol>
+<li><a href="https://leetcode-cn.com/problems/surrounded-regions/" target="_blank" rel="noopener noreferrer">130. 被围绕的区域</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>solve</span><span>(</span><span>board</span><span>)</span> <span>{</span>
+  <span>const</span> col <span>=</span> board<span>.</span>length<span>,</span> row <span>=</span> board<span>[</span><span>0</span><span>]</span><span>.</span>length
+  <span>// 遍历四条边，找到为 O 的元素，然后深搜将与之相连的 O 变为 o</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> col<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>board<span>[</span>i<span>]</span><span>[</span><span>0</span><span>]</span> <span>===</span> <span>'O'</span><span>)</span> <span>dfs</span><span>(</span>i<span>,</span> <span>0</span><span>,</span> board<span>)</span>
+    <span>if</span> <span>(</span>board<span>[</span>i<span>]</span><span>[</span>row <span>-</span> <span>1</span><span>]</span> <span>===</span> <span>'O'</span><span>)</span> <span>dfs</span><span>(</span>i<span>,</span> row <span>-</span> <span>1</span><span>,</span> board<span>)</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> row<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>board<span>[</span><span>0</span><span>]</span><span>[</span>j<span>]</span> <span>===</span> <span>'O'</span><span>)</span> <span>dfs</span><span>(</span><span>0</span><span>,</span> j<span>,</span> board<span>)</span>
+    <span>if</span> <span>(</span>board<span>[</span>col <span>-</span> <span>1</span><span>]</span><span>[</span>j<span>]</span> <span>===</span> <span>'O'</span><span>)</span> <span>dfs</span><span>(</span>col <span>-</span> <span>1</span><span>,</span> j<span>,</span> board<span>)</span>
+  <span>}</span>
+
+  <span>// 将所有 O 变成 X，所有 o 变成 O</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> col<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> row<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+      <span>if</span> <span>(</span>board<span>[</span>i<span>]</span><span>[</span>j<span>]</span> <span>===</span> <span>'O'</span><span>)</span> board<span>[</span>i<span>]</span><span>[</span>j<span>]</span> <span>=</span> <span>'X'</span>
+      <span>else</span> <span>if</span> <span>(</span>board<span>[</span>i<span>]</span><span>[</span>j<span>]</span> <span>===</span> <span>'o'</span><span>)</span> board<span>[</span>i<span>]</span><span>[</span>j<span>]</span> <span>=</span> <span>'O'</span>
+    <span>}</span>
+  <span>}</span>
+<span>}</span>
+
+<span>function</span> <span>dfs</span><span>(</span><span>x<span>,</span> y<span>,</span> board</span><span>)</span> <span>{</span>
+  board<span>[</span>x<span>]</span><span>[</span>y<span>]</span> <span>=</span> <span>'o'</span>
+  <span>const</span> col <span>=</span> board<span>.</span>length<span>,</span> row <span>=</span> board<span>[</span><span>0</span><span>]</span><span>.</span>length
+  <span>const</span> directions <span>=</span> <span>[</span><span>[</span><span>0</span><span>,</span> <span>1</span><span>]</span><span>,</span> <span>[</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>-</span><span>1</span><span>]</span><span>,</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>0</span><span>]</span><span>]</span>
+  <span>for</span> <span>(</span><span>const</span> <span>[</span>_x<span>,</span> _y<span>]</span> <span>of</span> directions<span>)</span> <span>{</span>
+    <span>const</span> m <span>=</span> x <span>+</span> _x<span>,</span> n <span>=</span> y <span>+</span> _y
+    <span>if</span> <span>(</span>m <span>&lt;</span> <span>0</span> <span>||</span> m <span>>=</span> col<span>)</span> <span>continue</span>
+    <span>if</span> <span>(</span>n <span>&lt;</span> <span>0</span> <span>||</span> n <span>>=</span> row<span>)</span> <span>continue</span>
+    <span>if</span> <span>(</span>board<span>[</span>m<span>]</span><span>[</span>n<span>]</span> <span>!==</span> <span>'O'</span><span>)</span> <span>continue</span>
+    <span>dfs</span><span>(</span>m<span>,</span> n<span>,</span> board<span>)</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br></div></div><ol start="2">
+<li><a href="https://leetcode-cn.com/problems/target-sum/" target="_blank" rel="noopener noreferrer">494. 目标和</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>findTargetSumWays</span><span>(</span><span>nums<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>const</span> len <span>=</span> nums<span>.</span>length
+  <span>const</span> memo <span>=</span> <span>new</span> <span>Map</span><span>(</span><span>)</span>
+  
+  <span>const</span> <span>dfs</span> <span>=</span> <span>(</span><span>target<span>,</span> index</span><span>)</span> <span>=></span> <span>{</span>
+    <span>const</span> key <span>=</span> <span><span>`</span><span><span>${</span>target<span>}</span></span><span>-</span><span><span>${</span>index<span>}</span></span><span>`</span></span>
+    <span>// 递归到底，已经得到一种解法</span>
+    <span>if</span> <span>(</span>target <span>===</span> <span>0</span> <span>&amp;&amp;</span> index <span>===</span> len<span>)</span> <span>return</span> <span>1</span>
+    <span>// 递归到底，没有得到解法</span>
+    <span>if</span> <span>(</span>index <span>>=</span> len<span>)</span> <span>return</span> <span>0</span>
+    <span>if</span> <span>(</span>memo<span>.</span><span>has</span><span>(</span>key<span>)</span><span>)</span> <span>return</span> memo<span>.</span><span>get</span><span>(</span>key<span>)</span>
+    <span>let</span> ans <span>=</span> <span>0</span>
+    <span>// + 这个元素</span>
+    ans <span>+=</span> <span>dfs</span><span>(</span>target <span>-</span> nums<span>[</span>index<span>]</span><span>,</span> index <span>+</span> <span>1</span><span>)</span>
+    ans <span>+=</span> <span>dfs</span><span>(</span>target <span>+</span> nums<span>[</span>index<span>]</span><span>,</span> index <span>+</span> <span>1</span><span>)</span>
+    memo<span>.</span><span>set</span><span>(</span>key<span>,</span> ans<span>)</span>
+    <span>return</span> ans
+  <span>}</span>
+
+  <span>return</span> <span>dfs</span><span>(</span>target<span>,</span> <span>0</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><ol start="3">
+<li><a href="https://leetcode-cn.com/problems/matchsticks-to-square/" target="_blank" rel="noopener noreferrer">473. 火柴拼正方形</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>makesquare</span><span>(</span><span>matchsticks</span><span>)</span> <span>{</span>
+  matchsticks <span>=</span> matchsticks<span>.</span><span>sort</span><span>(</span><span>(</span><span>a<span>,</span> b</span><span>)</span> <span>=></span> b <span>-</span> a<span>)</span>
+
+  <span>const</span> len <span>=</span> matchsticks<span>.</span>length
+  <span>const</span> sum <span>=</span> matchsticks<span>.</span><span>reduce</span><span>(</span><span>(</span><span>sum<span>,</span> curr</span><span>)</span> <span>=></span> sum <span>+</span> curr<span>)</span>
+  <span>if</span> <span>(</span>sum <span>%</span> <span>4</span> <span>!==</span> <span>0</span><span>)</span> <span>return</span> <span>false</span>
+  <span>const</span> target <span>=</span> sum <span>>></span> <span>2</span>
+  <span>const</span> res <span>=</span> <span>Array</span><span>(</span><span>4</span><span>)</span><span>.</span><span>fill</span><span>(</span><span>null</span><span>)</span><span>.</span><span>map</span><span>(</span><span>(</span><span>)</span> <span>=></span> target<span>)</span>
+
+  <span>const</span> <span>dfs</span> <span>=</span> <span>(</span><span>index<span>,</span> res</span><span>)</span> <span>=></span> <span>{</span>
+    <span>if</span> <span>(</span>index <span>===</span> len<span>)</span> <span>{</span>
+      <span>return</span> <span>true</span>
+    <span>}</span>
+    <span>// 四个状态就是这个元素放到这四个桶中</span>
+    <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> res<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+      <span>if</span> <span>(</span>res<span>[</span>i<span>]</span> <span>&lt;</span> matchsticks<span>[</span>index<span>]</span><span>)</span> <span>continue</span>
+      <span>// 减支操作，没有不影响结果</span>
+      <span>if</span> <span>(</span>res<span>[</span>i<span>]</span> <span>===</span> matchsticks<span>[</span>index<span>]</span> <span>||</span> res<span>[</span>i<span>]</span> <span>>=</span> matchsticks<span>[</span>index<span>]</span> <span>+</span> matchsticks<span>[</span>len <span>-</span> <span>1</span><span>]</span><span>)</span> <span>{</span>
+        res<span>[</span>i<span>]</span> <span>-=</span> matchsticks<span>[</span>index<span>]</span>
+        <span>if</span> <span>(</span><span>dfs</span><span>(</span>index <span>+</span> <span>1</span><span>,</span> res<span>)</span><span>)</span> <span>return</span> <span>true</span>
+        res<span>[</span>i<span>]</span> <span>+=</span> matchsticks<span>[</span>index<span>]</span>
+      <span>}</span>
+    <span>}</span>
+    <span>return</span> <span>false</span>
+  <span>}</span>
+
+  <span>return</span> <span>dfs</span><span>(</span><span>0</span><span>,</span> res<span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div><ol start="4">
+<li><a href="https://leetcode-cn.com/problems/combination-sum/" target="_blank" rel="noopener noreferrer">39. 组合总和</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>combinationSum</span><span>(</span><span>candidates<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>const</span> len <span>=</span> candidates<span>.</span>length
+  <span>const</span> ans <span>=</span> <span>[</span><span>]</span>
+
+  <span>// index 累加是保证结果不重复的关键</span>
+  <span>const</span> <span>dfs</span> <span>=</span> <span>(</span><span>index <span>=</span> <span>0</span><span>,</span> rest <span>=</span> target<span>,</span> res <span>=</span> <span>[</span><span>]</span></span><span>)</span> <span>=></span> <span>{</span>
+    <span>if</span> <span>(</span>index <span>===</span> len<span>)</span> <span>return</span>
+    <span>if</span> <span>(</span>rest <span>&lt;</span> <span>0</span><span>)</span> <span>return</span>
+    <span>if</span> <span>(</span>rest <span>===</span> <span>0</span><span>)</span> <span>return</span> ans<span>.</span><span>push</span><span>(</span>res<span>)</span>
+    <span>// 不选</span>
+    <span>dfs</span><span>(</span>index <span>+</span> <span>1</span><span>,</span> rest<span>,</span> res<span>)</span>
+    <span>// 选</span>
+    <span>dfs</span><span>(</span>index<span>,</span> rest <span>-</span> candidates<span>[</span>index<span>]</span><span>,</span> <span>[</span><span>...</span>res<span>,</span> candidates<span>[</span>index<span>]</span><span>]</span><span>)</span>
+  <span>}</span>
+
+  <span>dfs</span><span>(</span><span>)</span>
+  <span>return</span> ans
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div>]]></content>
+    <author>
+      <name>Vic</name>
+    </author>
+    <contributor>
+      <name>Vic</name>
+    </contributor>
+    <published>2021-06-29T08:42:49.000Z</published>
+    <rights>Copyright by Vic</rights>
+  </entry>
+  <entry>
+    <title type="html">二分搜索</title>
+    <id>https://x-vic.gitee.io/code/code/views/algorithm/binary-search/</id>
+    <link href="https://x-vic.gitee.io/code/code/views/algorithm/binary-search/"/>
+    <updated>2021-06-29T08:42:49.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="基础应用"> 基础应用</h2>
+<ol>
+<li><a href="https://leetcode-cn.com/problems/sqrtx/" target="_blank" rel="noopener noreferrer">69. x 的平方根</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>mySqrt</span><span>(</span><span>x</span><span>)</span> <span>{</span>
+  <span>// 在 0 ～ x 之间查找一个值的平方 等于 x</span>
+  <span>let</span> head <span>=</span> <span>0</span><span>,</span> tail <span>=</span> x
+  <span>// 寻找最后一个 v * v &lt;= x 的值</span>
+  <span>while</span> <span>(</span>head <span>+</span> <span>2</span> <span>&lt;</span> tail<span>)</span> <span>{</span> <span>// 为什么不是 head &lt; tail，因为这样容易造成死循环</span>
+    <span>const</span> mid <span>=</span> <span>(</span>tail <span>+</span> head<span>)</span> <span>>></span> <span>1</span>
+    <span>// 目标在后半段</span>
+    <span>if</span> <span>(</span>mid <span>*</span> mid <span>&lt;=</span> x<span>)</span> <span>{</span>
+      head <span>=</span> mid
+    <span>}</span> <span>else</span> <span>{</span>
+      tail <span>=</span> mid <span>-</span> <span>1</span>
+    <span>}</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> tail<span>;</span> i <span>>=</span> head<span>;</span> i<span>--</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>i <span>*</span> i <span>&lt;=</span> x<span>)</span> <span>return</span> i
+  <span>}</span>
+  <span>return</span> head
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div><ol start="2">
+<li><a href="https://leetcode-cn.com/problems/search-insert-position/" target="_blank" rel="noopener noreferrer">35. 搜索插入位置</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>searchInsert</span><span>(</span><span>nums<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>// 寻找数组中第一个 >= target 的位置</span>
+  <span>const</span> len <span>=</span> nums<span>.</span>length
+  <span>let</span> head <span>=</span> <span>0</span><span>,</span> tail <span>=</span> len <span>-</span> <span>1</span><span>,</span> mid
+  <span>// 特判，这个值应该放到数组的最后去</span>
+  <span>if</span> <span>(</span>target <span>></span> nums<span>[</span>tail<span>]</span><span>)</span> <span>return</span> len
+  <span>while</span> <span>(</span>head <span>&lt;</span> tail<span>)</span> <span>{</span>
+    mid <span>=</span> <span>(</span>tail <span>+</span> head<span>)</span> <span>>></span> <span>1</span>
+    <span>if</span> <span>(</span>nums<span>[</span>mid<span>]</span> <span>>=</span> target<span>)</span> <span>{</span>
+      tail <span>=</span> mid
+    <span>}</span> <span>else</span> <span>{</span>
+      head <span>=</span> mid <span>+</span> <span>1</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> head
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><ol start="3">
+<li><a href="https://leetcode-cn.com/problems/two-sum/" target="_blank" rel="noopener noreferrer">1. 两数之和</a></li>
+</ol>
+<div><pre><code><span>// 排序之后，二分求解</span>
+<span>function</span> <span>twoSum</span><span>(</span><span>nums<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>const</span> len <span>=</span> nums<span>.</span>length
+  <span>let</span> indexes <span>=</span> <span>Array</span><span>(</span>len<span>)</span><span>.</span><span>fill</span><span>(</span><span>null</span><span>)</span><span>.</span><span>map</span><span>(</span><span>(</span><span>_<span>,</span> i</span><span>)</span> <span>=></span> i<span>)</span>
+  <span>// 得到排序后的下标</span>
+  indexes <span>=</span> indexes<span>.</span><span>sort</span><span>(</span><span>(</span><span>a<span>,</span> b</span><span>)</span> <span>=></span> nums<span>[</span>a<span>]</span> <span>-</span> nums<span>[</span>b<span>]</span><span>)</span>
+  <span>// 遍历排序后的下标</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>const</span> num <span>=</span> nums<span>[</span>indexes<span>[</span>i<span>]</span><span>]</span>
+    <span>// 二分查找剩下的一半</span>
+    <span>let</span> head <span>=</span> i <span>+</span> <span>1</span><span>,</span> tail <span>=</span> len <span>-</span> <span>1</span><span>,</span> mid
+    <span>while</span> <span>(</span>head <span>&lt;=</span> tail<span>)</span> <span>{</span>
+      mid <span>=</span> <span>(</span>tail <span>+</span> head<span>)</span> <span>>></span> <span>1</span>
+      <span>if</span> <span>(</span>nums<span>[</span>indexes<span>[</span>mid<span>]</span><span>]</span> <span>===</span> target <span>-</span> num<span>)</span> <span>return</span> <span>[</span>indexes<span>[</span>i<span>]</span><span>,</span> indexes<span>[</span>mid<span>]</span><span>]</span>
+      <span>if</span> <span>(</span>nums<span>[</span>indexes<span>[</span>mid<span>]</span><span>]</span> <span>&lt;</span> target <span>-</span> num<span>)</span> head <span>=</span> mid <span>+</span> <span>1</span>
+      <span>else</span> tail <span>=</span> mid <span>-</span> <span>1</span>
+    <span>}</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br></div></div><ol start="4">
+<li><a href="https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/" target="_blank" rel="noopener noreferrer">34. 在排序数组中查找元素的第一个和最后一个位置</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>searchRange</span><span>(</span><span>nums<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>// 查找第一个 >= target</span>
+  <span>const</span> start <span>=</span> <span>bns0_1</span><span>(</span>nums<span>,</span> <span>(</span><span>num</span><span>)</span> <span>=></span> num <span>>=</span> target<span>)</span>
+  <span>// 没有这个元素</span>
+  <span>if</span> <span>(</span>nums<span>[</span>start<span>]</span> <span>!==</span> target<span>)</span> <span>return</span> <span>[</span><span>-</span><span>1</span><span>,</span> <span>-</span><span>1</span><span>]</span>
+  <span>// 查找第一个 > target</span>
+  <span>const</span> end <span>=</span> <span>bns0_1</span><span>(</span>nums<span>,</span> <span>(</span><span>num</span><span>)</span> <span>=></span> num <span>></span> target<span>,</span> start<span>)</span> <span>-</span> <span>1</span>
+  <span>return</span> <span>[</span>start<span>,</span> end<span>]</span>
+<span>}</span>
+
+<span>// 0-1 模型二分查找（查找第一个 1）</span>
+<span>function</span> <span>bns0_1</span><span>(</span><span>arr<span>,</span> condition<span>,</span> start <span>=</span> <span>0</span><span>,</span> end <span>=</span> arr<span>.</span>length <span>-</span> <span>1</span></span><span>)</span> <span>{</span>
+  <span>const</span> len <span>=</span> arr<span>.</span>length
+  <span>let</span> head <span>=</span> start <span>||</span> <span>0</span><span>,</span> tail <span>=</span> end <span>||</span> len <span>-</span> <span>1</span><span>,</span> mid
+  <span>while</span> <span>(</span>head <span>+</span> <span>2</span> <span>&lt;</span> tail<span>)</span> <span>{</span>
+    mid <span>=</span> <span>(</span><span>(</span>tail <span>-</span> head<span>)</span> <span>>></span> <span>1</span><span>)</span> <span>+</span> head
+    <span>if</span> <span>(</span><span>condition</span><span>(</span>arr<span>[</span>mid<span>]</span><span>)</span><span>)</span> tail <span>=</span> mid
+    <span>else</span> head <span>=</span> mid <span>+</span> <span>1</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> head<span>;</span> i <span>&lt;=</span> tail<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>condition</span><span>(</span>arr<span>[</span>i<span>]</span><span>)</span><span>)</span> <span>return</span> i
+  <span>}</span>
+  <span>// 没有找到符合条件的元素</span>
+  <span>return</span> len
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div><ol start="5">
+<li><a href="https://leetcode-cn.com/problems/minimum-operations-to-reduce-x-to-zero/" target="_blank" rel="noopener noreferrer">1658. 将 x 减到 0 的最小操作数</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>minOperations</span><span>(</span><span>nums<span>,</span> x</span><span>)</span> <span>{</span>
+  <span>let</span> ans <span>=</span> <span>Infinity</span>
+  <span>const</span> len <span>=</span> nums<span>.</span>length
+  <span>// 从左到右的前缀和</span>
+  <span>const</span> sumL <span>=</span> <span>[</span><span>0</span><span>]</span>
+  nums<span>.</span><span>reduce</span><span>(</span><span>(</span><span>sum<span>,</span> curr</span><span>)</span> <span>=></span> <span>{</span>
+    sumL<span>.</span><span>push</span><span>(</span>sum <span>+</span> curr<span>)</span>
+    <span>return</span> sum <span>+</span> curr
+  <span>}</span><span>,</span> <span>0</span><span>)</span>
+  <span>// 从右到左的前缀和</span>
+  <span>const</span> sumR <span>=</span> <span>[</span><span>0</span><span>]</span>
+  nums<span>.</span><span>reduceRight</span><span>(</span><span>(</span><span>sum<span>,</span> curr</span><span>)</span> <span>=></span> <span>{</span>
+    sumR<span>.</span><span>push</span><span>(</span>sum <span>+</span> curr<span>)</span>
+    <span>return</span> sum <span>+</span> curr
+  <span>}</span><span>,</span> <span>0</span><span>)</span>
+  
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> sumL<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>const</span> target <span>=</span> x <span>-</span> sumL<span>[</span>i<span>]</span>
+    <span>const</span> index <span>=</span> <span>bs</span><span>(</span>sumR<span>,</span> target<span>)</span>
+    <span>// 找到一个解，并且这个解没有交叉</span>
+    <span>if</span> <span>(</span>index <span>&lt;</span> sumR<span>.</span>length <span>&amp;&amp;</span> i <span>+</span> index <span>&lt;=</span> len<span>)</span> <span>{</span>
+      ans <span>=</span> Math<span>.</span><span>min</span><span>(</span>ans<span>,</span> i <span>+</span> index<span>)</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> ans <span>===</span> <span>Infinity</span> <span>?</span> <span>-</span><span>1</span> <span>:</span> ans
+<span>}</span>
+
+<span>// 二分搜索</span>
+<span>function</span> <span>bs</span><span>(</span><span>arr<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>let</span> head <span>=</span> <span>0</span><span>,</span> tail <span>=</span> arr<span>.</span>length <span>-</span> <span>1</span><span>,</span> mid
+  <span>while</span> <span>(</span>head <span>&lt;=</span> tail<span>)</span> <span>{</span>
+    mid <span>=</span> <span>(</span>head <span>+</span> tail<span>)</span> <span>>></span> <span>1</span>
+    <span>if</span> <span>(</span>arr<span>[</span>mid<span>]</span> <span>===</span> target<span>)</span> <span>return</span> mid
+    <span>if</span> <span>(</span>arr<span>[</span>mid<span>]</span> <span>&lt;</span> target<span>)</span> head <span>=</span> mid <span>+</span> <span>1</span>
+    <span>else</span> tail <span>=</span> mid <span>-</span> <span>1</span>
+  <span>}</span>
+  <span>return</span> arr<span>.</span>length
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br></div></div><h2 id="进阶"> 进阶</h2>
+<ol>
+<li><a href="https://leetcode-cn.com/problems/heaters/" target="_blank" rel="noopener noreferrer">475. 供暖器</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>findRadius</span><span>(</span><span>houses<span>,</span> heaters</span><span>)</span> <span>{</span>
+  <span>let</span> ans <span>=</span> <span>0</span>
+  <span>// 对供暖器进行排序</span>
+  heaters <span>=</span> heaters<span>.</span><span>sort</span><span>(</span><span>(</span><span>a<span>,</span> b</span><span>)</span> <span>=></span> a <span>-</span> b<span>)</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> houses<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>// 寻找第一个 >= 目标的元素（要比较该位置与前一个位置的距离更近的）</span>
+    <span>const</span> index <span>=</span> <span>binary_search_0_1</span><span>(</span>heaters<span>,</span> <span>item</span> <span>=></span> item <span>>=</span> houses<span>[</span>i<span>]</span><span>)</span>
+
+    ans <span>=</span> Math<span>.</span><span>max</span><span>(</span>
+      ans<span>,</span>
+      Math<span>.</span><span>min</span><span>(</span>
+        Math<span>.</span><span>abs</span><span>(</span>heaters<span>[</span>index<span>]</span> <span>-</span> houses<span>[</span>i<span>]</span><span>)</span><span>,</span>
+        <span>// index 可能等于数组最后一位元素的下一位</span>
+        Math<span>.</span><span>abs</span><span>(</span><span>(</span>heaters<span>[</span>index <span>-</span> <span>1</span><span>]</span> <span>||</span> <span>Infinity</span><span>)</span> <span>-</span> houses<span>[</span>i<span>]</span><span>)</span>
+      <span>)</span>
+    <span>)</span>
+  <span>}</span>
+
+  <span>return</span> ans
+<span>}</span>
+
+<span>function</span> <span>binary_search_0_1</span><span>(</span><span>arr<span>,</span> condition</span><span>)</span> <span>{</span>
+  <span>let</span> head <span>=</span> <span>0</span><span>,</span> tail <span>=</span> arr<span>.</span>length <span>-</span> <span>1</span><span>,</span> mid
+  <span>while</span> <span>(</span>head <span>&lt;</span> tail<span>)</span> <span>{</span>
+    mid <span>=</span> <span>(</span>head <span>+</span> tail<span>)</span> <span>>></span> <span>1</span>
+    <span>if</span> <span>(</span><span>condition</span><span>(</span>arr<span>[</span>mid<span>]</span><span>)</span><span>)</span> tail <span>=</span> mid
+    <span>else</span> head <span>=</span> mid <span>+</span> <span>1</span>
+  <span>}</span>
+  <span>return</span> head
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br></div></div><ol start="2">
+<li><a href="https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/" target="_blank" rel="noopener noreferrer">81. 搜索旋转排序数组 II</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>search</span><span>(</span><span>nums<span>,</span> target</span><span>)</span> <span>{</span>
+  <span>let</span> head <span>=</span> l <span>=</span> <span>0</span><span>,</span> tail <span>=</span> r <span>=</span> nums<span>.</span>length <span>-</span> <span>1</span><span>,</span> mid
+  <span>// 看看首尾是否有目标元素</span>
+  <span>if</span> <span>(</span>nums<span>[</span>head<span>]</span> <span>===</span> target <span>||</span> nums<span>[</span>tail<span>]</span> <span>===</span> target<span>)</span> <span>return</span> <span>true</span>
+  <span>// 剔除首尾相同的元素</span>
+  <span>while</span> <span>(</span>nums<span>[</span>l<span>]</span> <span>===</span> nums<span>[</span>r<span>]</span> <span>&amp;&amp;</span> l <span>&lt;=</span> r<span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>nums<span>[</span>l<span>]</span> <span>===</span> target<span>)</span> <span>return</span> <span>true</span>
+    l<span>++</span>
+    r<span>--</span>
+  <span>}</span>
+  head <span>=</span> l
+  tail <span>=</span> r
+  <span>// 二分</span>
+  <span>while</span> <span>(</span>l <span>&lt;=</span> r<span>)</span> <span>{</span>
+    mid <span>=</span> <span>(</span>l <span>+</span> r<span>)</span> <span>>></span> <span>1</span>
+    <span>if</span> <span>(</span>nums<span>[</span>mid<span>]</span> <span>===</span> target<span>)</span> <span>return</span> <span>true</span>
+    <span>if</span> <span>(</span>nums<span>[</span>mid<span>]</span> <span>&lt;=</span> nums<span>[</span>tail<span>]</span><span>)</span> <span>{</span> <span>// 后半段</span>
+      <span>if</span> <span>(</span>target <span>&lt;=</span> nums<span>[</span>tail<span>]</span> <span>&amp;&amp;</span> target <span>></span> nums<span>[</span>mid<span>]</span><span>)</span> l <span>=</span> mid <span>+</span> <span>1</span>
+      <span>else</span> r <span>=</span> mid <span>-</span> <span>1</span>
+    <span>}</span> <span>else</span> <span>{</span> <span>// 前半段</span>
+      <span>if</span> <span>(</span>target <span>&lt;</span> nums<span>[</span>mid<span>]</span> <span>&amp;&amp;</span> target <span>>=</span> nums<span>[</span>head<span>]</span><span>)</span> r <span>=</span> mid <span>-</span> <span>1</span>
+      <span>else</span> l <span>=</span> mid <span>+</span> <span>1</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>return</span> <span>false</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><ol start="3">
+<li><a href="https://leetcode-cn.com/problems/median-of-two-sorted-arrays/" target="_blank" rel="noopener noreferrer">4. 寻找两个正序数组的中位数</a></li>
+</ol>
+<div><pre><code><span>// 将寻找中位数转变为寻找第 k 大的元素</span>
+<span>function</span> <span>findMedianSortedArrays</span><span>(</span><span>nums1<span>,</span> nums2</span><span>)</span> <span>{</span>
+  <span>const</span> l1 <span>=</span> nums1<span>.</span>length<span>,</span> l2 <span>=</span> nums2<span>.</span>length
+  <span>const</span> mid <span>=</span> <span>(</span>l1 <span>+</span> l2 <span>+</span> <span>1</span><span>)</span> <span>>></span> <span>1</span>
+  <span>const</span> a <span>=</span> <span>findK</span><span>(</span>nums1<span>,</span> nums2<span>,</span> <span>0</span><span>,</span> <span>0</span><span>,</span> mid<span>)</span>
+  <span>if</span> <span>(</span><span>(</span>l1 <span>+</span> l2<span>)</span> <span>%</span> <span>2</span> <span>===</span> <span>1</span><span>)</span> <span>return</span> a
+  <span>const</span> b <span>=</span> <span>findK</span><span>(</span>nums1<span>,</span> nums2<span>,</span> <span>0</span><span>,</span> <span>0</span><span>,</span> mid <span>+</span> <span>1</span><span>)</span>
+  <span>return</span> <span>(</span>a <span>+</span> b<span>)</span> <span>/</span> <span>2</span>
+<span>}</span>
+
+<span>// 二分法寻找两个数组中的第 k 大的元素</span>
+<span>function</span> <span>findK</span><span>(</span><span>arr1<span>,</span> arr2<span>,</span> i<span>,</span> j<span>,</span> k</span><span>)</span> <span>{</span>
+  <span>const</span> l1 <span>=</span> arr1<span>.</span>length<span>,</span> l2 <span>=</span> arr2<span>.</span>length
+  <span>// 边界判断</span>
+  <span>if</span> <span>(</span>i <span>===</span> l1<span>)</span> <span>return</span> arr2<span>[</span>j <span>+</span> k <span>-</span> <span>1</span><span>]</span>
+  <span>if</span> <span>(</span>j <span>===</span> l2<span>)</span> <span>return</span> arr1<span>[</span>i <span>+</span> k <span>-</span> <span>1</span><span>]</span>
+  <span>if</span> <span>(</span>k <span>===</span> <span>1</span><span>)</span> <span>return</span> Math<span>.</span><span>min</span><span>(</span>arr1<span>[</span>i<span>]</span><span>,</span> arr2<span>[</span>j<span>]</span><span>)</span>
+
+  <span>let</span> m <span>=</span> Math<span>.</span><span>min</span><span>(</span>k <span>>></span> <span>1</span><span>,</span> l1 <span>-</span> i<span>)</span>
+  <span>let</span> n <span>=</span> Math<span>.</span><span>min</span><span>(</span>k <span>-</span> m<span>,</span> l2 <span>-</span> j<span>)</span>
+  m <span>=</span> k <span>-</span> n
+  <span>if</span> <span>(</span>arr1<span>[</span>i <span>+</span> m <span>-</span> <span>1</span><span>]</span> <span>&lt;=</span> arr2<span>[</span>j <span>+</span> n <span>-</span> <span>1</span><span>]</span><span>)</span> <span>return</span> <span>findK</span><span>(</span>arr1<span>,</span> arr2<span>,</span> i <span>+</span> m<span>,</span> j<span>,</span> k <span>-</span> m<span>)</span>
+  <span>return</span> <span>findK</span><span>(</span>arr1<span>,</span> arr2<span>,</span> i<span>,</span> j <span>+</span> n<span>,</span> k <span>-</span> n<span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br></div></div>]]></content>
+    <author>
+      <name>Vic</name>
+    </author>
+    <contributor>
+      <name>Vic</name>
+    </contributor>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">动态规划</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/dp/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/dp/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="单序列"> 单序列</h2>
 <ol>
 <li><a href="https://leetcode-cn.com/problems/perfect-squares/" target="_blank" rel="noopener noreferrer">完全平方数</a></li>
@@ -1218,14 +1824,305 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
+    <rights>Copyright by Vic</rights>
+  </entry>
+  <entry>
+    <title type="html">哈希表</title>
+    <id>https://x-vic.gitee.io/code/code/views/algorithm/hash-table/</id>
+    <link href="https://x-vic.gitee.io/code/code/views/algorithm/hash-table/"/>
+    <updated>2021-06-29T08:42:49.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="基础应用"> 基础应用</h2>
+<ol>
+<li><a href="https://leetcode-cn.com/problems/design-hashset/" target="_blank" rel="noopener noreferrer">705. 设计哈希集合</a></li>
+</ol>
+<div><pre><code><span>class</span> <span>Node</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>key <span>=</span> <span>0</span><span>,</span> next <span>=</span> <span>null</span></span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>key <span>=</span> key
+    <span>this</span><span>.</span>next <span>=</span> next
+  <span>}</span>
+  <span>insertAfter</span><span>(</span><span>node</span><span>)</span> <span>{</span>
+    node<span>.</span>next <span>=</span> <span>this</span><span>.</span>next
+    <span>this</span><span>.</span>next <span>=</span> node
+  <span>}</span>
+  <span>removeAfter</span><span>(</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>this</span><span>.</span>next <span>===</span> <span>null</span><span>)</span> <span>return</span>
+    <span>this</span><span>.</span>next <span>=</span> <span>this</span><span>.</span>next<span>.</span>next
+  <span>}</span>
+<span>}</span>
+
+<span>class</span> <span>MyHashSet</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>data <span>=</span> <span>Array</span><span>(</span><span>100</span><span>)</span><span>.</span><span>fill</span><span>(</span><span>null</span><span>)</span><span>.</span><span>map</span><span>(</span><span>(</span><span>)</span> <span>=></span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>)</span>
+  <span>}</span>
+  <span>hashFunc</span><span>(</span><span>key</span><span>)</span> <span>{</span>
+    <span>return</span> <span>stringToHex</span><span>(</span>key<span>)</span>
+  <span>}</span>
+  <span>add</span><span>(</span><span>key</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>this</span><span>.</span><span>contains</span><span>(</span>key<span>)</span><span>)</span> <span>return</span>
+    <span>const</span> index <span>=</span> <span>this</span><span>.</span><span>hashFunc</span><span>(</span>key<span>)</span> <span>%</span> <span>this</span><span>.</span>data<span>.</span>length
+    <span>const</span> node <span>=</span> <span>this</span><span>.</span>data<span>[</span>index<span>]</span>
+    <span>if</span> <span>(</span>node <span>==</span> <span>null</span><span>)</span> <span>return</span> <span>this</span><span>.</span>data<span>[</span>index<span>]</span> <span>=</span> <span>new</span> <span>Node</span><span>(</span>key<span>)</span>
+    <span>this</span><span>.</span>data<span>[</span>index<span>]</span><span>.</span><span>insertAfter</span><span>(</span><span>new</span> <span>Node</span><span>(</span>key<span>)</span><span>)</span>
+  <span>}</span>
+  <span>remove</span><span>(</span><span>key</span><span>)</span> <span>{</span>
+    <span>const</span> index <span>=</span> <span>this</span><span>.</span><span>hashFunc</span><span>(</span>key<span>)</span> <span>%</span> <span>this</span><span>.</span>data<span>.</span>length
+    <span>let</span> node <span>=</span> <span>this</span><span>.</span>data<span>[</span>index<span>]</span>
+    <span>if</span> <span>(</span>node <span>==</span> <span>null</span><span>)</span> <span>return</span>
+    <span>while</span> <span>(</span>node<span>.</span>next <span>&amp;&amp;</span> node<span>.</span>next<span>.</span>key <span>!==</span> key<span>)</span> node <span>=</span> node<span>.</span>next
+    node<span>.</span><span>removeAfter</span><span>(</span><span>)</span>
+  <span>}</span>
+  <span>contains</span><span>(</span><span>key</span><span>)</span> <span>{</span>
+    <span>const</span> index <span>=</span> <span>this</span><span>.</span><span>hashFunc</span><span>(</span>key<span>)</span> <span>%</span> <span>this</span><span>.</span>data<span>.</span>length
+    <span>if</span> <span>(</span><span>!</span><span>this</span><span>.</span>data<span>[</span>index<span>]</span><span>)</span> <span>return</span> <span>false</span>
+    <span>let</span> node <span>=</span> <span>this</span><span>.</span>data<span>[</span>index<span>]</span><span>.</span>next
+    <span>while</span> <span>(</span>node <span>&amp;&amp;</span> node<span>.</span>key <span>!==</span> key<span>)</span> node <span>=</span> node<span>.</span>next
+    <span>return</span> node <span>!=</span> <span>null</span>
+  <span>}</span>
+<span>}</span>
+
+<span>function</span> <span>stringToHex</span><span>(</span><span>str</span><span>)</span><span>{</span>
+  <span>//定义一个变量来存储hashCode</span>
+  <span>let</span> hashCode <span>=</span> <span>0</span>
+
+  <span>// 利用霍纳法则计算出hashCode的值</span>
+  <span>for</span> <span>(</span><span>var</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> str<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    hashCode <span>=</span> <span>37</span> <span>*</span> hashCode <span>+</span> str<span>.</span><span>charCodeAt</span><span>(</span>i<span>)</span>
+  <span>}</span>
+
+  <span>return</span> hashCode
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br></div></div><ol start="2">
+<li><a href="https://leetcode-cn.com/problems/design-hashmap/" target="_blank" rel="noopener noreferrer">706. 设计哈希映射</a></li>
+</ol>
+<div><pre><code><span>// 跟第一道题大同小异</span>
+<span>class</span> <span>Node</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>key <span>=</span> <span>0</span><span>,</span> value <span>=</span> <span>0</span><span>,</span> next <span>=</span> <span>null</span></span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>key <span>=</span> key
+    <span>this</span><span>.</span>value <span>=</span> value
+    <span>this</span><span>.</span>next <span>=</span> next
+  <span>}</span>
+  <span>insertAfter</span><span>(</span><span>node</span><span>)</span> <span>{</span>
+    node<span>.</span>next <span>=</span> <span>this</span><span>.</span>next
+    <span>this</span><span>.</span>next <span>=</span> node
+  <span>}</span>
+  <span>removeAfter</span><span>(</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>this</span><span>.</span>next <span>===</span> <span>null</span><span>)</span> <span>return</span>
+    <span>// const p = this.next</span>
+    <span>this</span><span>.</span>next <span>=</span> <span>this</span><span>.</span>next<span>.</span>next
+  <span>}</span>
+<span>}</span>
+
+<span>class</span> <span>MyHashMap</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>data <span>=</span> <span>Array</span><span>(</span><span>100</span><span>)</span><span>.</span><span>fill</span><span>(</span><span>null</span><span>)</span><span>.</span><span>map</span><span>(</span><span>(</span><span>)</span> <span>=></span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>)</span>
+  <span>}</span>
+  <span>hashFunc</span><span>(</span><span>key</span><span>)</span> <span>{</span>
+    <span>return</span> <span>stringToHex</span><span>(</span>key<span>)</span>
+  <span>}</span>
+  <span>put</span><span>(</span><span>key<span>,</span> value</span><span>)</span> <span>{</span>
+    <span>// if (this.get(key) !== -1) return</span>
+    <span>const</span> index <span>=</span> <span>this</span><span>.</span><span>hashFunc</span><span>(</span>key<span>)</span> <span>%</span> <span>this</span><span>.</span>data<span>.</span>length
+    <span>let</span> node <span>=</span> <span>this</span><span>.</span>data<span>[</span>index<span>]</span>
+    <span>// if (node == null) return this.data[index] = new Node(key, value)</span>
+    <span>while</span> <span>(</span>node<span>.</span>next <span>&amp;&amp;</span> node<span>.</span>next<span>.</span>key <span>!==</span> key<span>)</span> node <span>=</span> node<span>.</span>next
+    <span>// node 不为空</span>
+    <span>if</span> <span>(</span>node<span>.</span>next<span>)</span> <span>{</span>
+      node<span>.</span>next<span>.</span>value <span>=</span> value
+    <span>}</span> <span>else</span> <span>{</span>
+      <span>this</span><span>.</span>data<span>[</span>index<span>]</span><span>.</span><span>insertAfter</span><span>(</span><span>new</span> <span>Node</span><span>(</span>key<span>,</span> value<span>)</span><span>)</span>
+    <span>}</span>
+  <span>}</span>
+  <span>remove</span><span>(</span><span>key</span><span>)</span> <span>{</span>
+    <span>const</span> index <span>=</span> <span>this</span><span>.</span><span>hashFunc</span><span>(</span>key<span>)</span> <span>%</span> <span>this</span><span>.</span>data<span>.</span>length
+    <span>let</span> node <span>=</span> <span>this</span><span>.</span>data<span>[</span>index<span>]</span>
+    <span>if</span> <span>(</span>node <span>==</span> <span>null</span><span>)</span> <span>return</span>
+    <span>while</span> <span>(</span>node<span>.</span>next <span>&amp;&amp;</span> node<span>.</span>next<span>.</span>key <span>!==</span> key<span>)</span> node <span>=</span> node<span>.</span>next
+    node<span>.</span><span>removeAfter</span><span>(</span><span>)</span>
+  <span>}</span>
+  <span>get</span><span>(</span>key<span>)</span> <span>{</span>
+    <span>const</span> index <span>=</span> <span>this</span><span>.</span><span>hashFunc</span><span>(</span>key<span>)</span> <span>%</span> <span>this</span><span>.</span>data<span>.</span>length
+    <span>// if (!this.data[index]) return -1</span>
+    <span>let</span> node <span>=</span> <span>this</span><span>.</span>data<span>[</span>index<span>]</span><span>.</span>next
+    <span>while</span> <span>(</span>node <span>&amp;&amp;</span> node<span>.</span>key <span>!==</span> key<span>)</span> node <span>=</span> node<span>.</span>next
+    <span>if</span> <span>(</span>node <span>==</span> <span>null</span><span>)</span> <span>return</span> <span>-</span><span>1</span>
+    <span>return</span> node<span>.</span>value
+  <span>}</span>
+<span>}</span>
+
+<span>function</span> <span>stringToHex</span><span>(</span><span>str</span><span>)</span><span>{</span>
+  <span>//定义一个变量来存储hashCode</span>
+  <span>let</span> hashCode <span>=</span> <span>0</span>
+
+  <span>// 利用霍纳法则计算出hashCode的值</span>
+  <span>for</span> <span>(</span><span>var</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> str<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    hashCode <span>=</span> <span>37</span> <span>*</span> hashCode <span>+</span> str<span>.</span><span>charCodeAt</span><span>(</span>i<span>)</span>
+  <span>}</span>
+
+  <span>return</span> hashCode
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br></div></div><ol start="3">
+<li><a href="https://leetcode-cn.com/problems/lru-cache-lcci/" target="_blank" rel="noopener noreferrer">面试题 16.25. LRU 缓存</a></li>
+</ol>
+<div><pre><code><span>// 双向链表</span>
+<span>class</span> <span>Node</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>key <span>=</span> <span>0</span><span>,</span> value <span>=</span> <span>0</span><span>,</span> prev <span>=</span> <span>null</span><span>,</span> next <span>=</span> <span>null</span></span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>key <span>=</span> key
+    <span>this</span><span>.</span>value <span>=</span> value
+    <span>this</span><span>.</span>prev <span>=</span> prev
+    <span>this</span><span>.</span>next <span>=</span> next
+  <span>}</span>
+  <span>removeMe</span><span>(</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>this</span><span>.</span>prev<span>)</span> <span>this</span><span>.</span>prev<span>.</span>next <span>=</span> <span>this</span><span>.</span>next
+    <span>if</span> <span>(</span><span>this</span><span>.</span>next<span>)</span> <span>this</span><span>.</span>next<span>.</span>prev <span>=</span> <span>this</span><span>.</span>prev
+    <span>this</span><span>.</span>next <span>=</span> <span>this</span><span>.</span>prev <span>=</span> <span>null</span>
+  <span>}</span>
+  <span>insertPrev</span><span>(</span><span>node</span><span>)</span> <span>{</span>
+    node<span>.</span>next <span>=</span> <span>this</span>
+    node<span>.</span>prev <span>=</span> <span>this</span><span>.</span>prev
+    <span>if</span> <span>(</span><span>this</span><span>.</span>prev<span>)</span> <span>this</span><span>.</span>prev<span>.</span>next <span>=</span> node
+    <span>this</span><span>.</span>prev <span>=</span> node
+  <span>}</span>
+<span>}</span>
+
+<span>/**
+哈希列表（这个列表里面维护着一个缓存队列）
+使用虚拟头尾节点。添加：往虚尾前面插入；删除：往虚头后面删除
+ */</span>
+<span>class</span> <span>HashList</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>capacity <span>=</span> <span>10</span></span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>capacity <span>=</span> capacity
+    <span>this</span><span>.</span>data <span>=</span> <span>new</span> <span>Map</span><span>(</span><span>)</span>
+    <span>this</span><span>.</span>head <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span>
+    <span>this</span><span>.</span>tail <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span>
+    <span>this</span><span>.</span>head<span>.</span>next <span>=</span> <span>this</span><span>.</span>tail
+    <span>this</span><span>.</span>tail<span>.</span>prev <span>=</span> <span>this</span><span>.</span>head
+  <span>}</span>
+  <span>put</span><span>(</span><span>key<span>,</span> value</span><span>)</span> <span>{</span>
+    <span>// 原本就存在</span>
+    <span>if</span> <span>(</span><span>this</span><span>.</span>data<span>.</span><span>has</span><span>(</span>key<span>)</span><span>)</span> <span>{</span>
+      <span>// 维护 hash 表</span>
+      <span>this</span><span>.</span>data<span>.</span><span>get</span><span>(</span>key<span>)</span><span>.</span>value <span>=</span> value
+      <span>// 维护 链表</span>
+      <span>this</span><span>.</span>data<span>.</span><span>get</span><span>(</span>key<span>)</span><span>.</span><span>removeMe</span><span>(</span><span>)</span>
+    <span>}</span> <span>else</span> <span>{</span>
+      <span>// 维护 hash 表</span>
+      <span>this</span><span>.</span>data<span>.</span><span>set</span><span>(</span>key<span>,</span> <span>new</span> <span>Node</span><span>(</span>key<span>,</span> value<span>)</span><span>)</span>
+    <span>}</span>
+    <span>// 维护 链表</span>
+    <span>this</span><span>.</span>tail<span>.</span><span>insertPrev</span><span>(</span><span>this</span><span>.</span>data<span>.</span><span>get</span><span>(</span>key<span>)</span><span>)</span>
+    <span>// 添加到链表之前判断容量是否超出</span>
+    <span>if</span> <span>(</span><span>this</span><span>.</span>data<span>.</span>size <span>></span> <span>this</span><span>.</span>capacity<span>)</span> <span>{</span>
+      <span>// 在 hash 表中删除</span>
+      <span>this</span><span>.</span>data<span>.</span><span>delete</span><span>(</span><span>this</span><span>.</span>head<span>.</span>next<span>.</span>key<span>)</span>
+      <span>// 在链表中删除第一个元素</span>
+      <span>this</span><span>.</span>head<span>.</span>next<span>.</span><span>removeMe</span><span>(</span><span>)</span>
+    <span>}</span>
+  <span>}</span>
+  <span>get</span><span>(</span>key<span>)</span> <span>{</span>
+    <span>const</span> node <span>=</span> <span>this</span><span>.</span>data<span>.</span><span>get</span><span>(</span>key<span>)</span>
+    <span>if</span> <span>(</span>node <span>==</span> <span>null</span><span>)</span> <span>return</span> <span>-</span><span>1</span>
+    <span>// 在链表中删除自己</span>
+    node<span>.</span><span>removeMe</span><span>(</span><span>)</span>
+    <span>// 在链表中将自己添加到末尾</span>
+    <span>this</span><span>.</span>tail<span>.</span><span>insertPrev</span><span>(</span><span>this</span><span>.</span>data<span>.</span><span>get</span><span>(</span>key<span>)</span><span>)</span>
+    
+    <span>return</span> <span>this</span><span>.</span>data<span>.</span><span>get</span><span>(</span>key<span>)</span><span>.</span>value
+  <span>}</span>
+<span>}</span>
+
+<span>class</span> <span>LRUCache</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>capacity</span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>h <span>=</span> <span>new</span> <span>HashList</span><span>(</span>capacity<span>)</span>
+  <span>}</span>
+  <span>get</span><span>(</span>key<span>)</span> <span>{</span>
+    <span>return</span> <span>this</span><span>.</span>h<span>.</span><span>get</span><span>(</span>key<span>)</span>
+  <span>}</span>
+  <span>put</span><span>(</span><span>key<span>,</span> val</span><span>)</span> <span>{</span>
+    <span>return</span> <span>this</span><span>.</span>h<span>.</span><span>put</span><span>(</span>key<span>,</span> val<span>)</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br><span>75</span><br><span>76</span><br><span>77</span><br><span>78</span><br></div></div><ol start="4">
+<li><a href="https://leetcode-cn.com/problems/encode-and-decode-tinyurl/" target="_blank" rel="noopener noreferrer">535. TinyURL 的加密与解密</a></li>
+</ol>
+<div><pre><code><span>const</span> dict <span>=</span> <span>new</span> <span>Map</span><span>(</span><span>)</span>
+
+<span>function</span> <span>encode</span><span>(</span><span>longUrl</span><span>)</span> <span>{</span>
+  <span>// 将生成的随机字符串和 longUrl 作为键值对存入对象</span>
+  <span>let</span> shortStr <span>=</span> <span>roundString</span><span>(</span><span>5</span><span>)</span>
+  <span>while</span> <span>(</span>dict<span>.</span><span>has</span><span>(</span>shortStr<span>)</span><span>)</span> <span>{</span>
+    shortStr <span>=</span> <span>roundString</span><span>(</span><span>5</span><span>)</span>
+  <span>}</span>
+  dict<span>.</span><span>set</span><span>(</span>shortStr<span>,</span> longUrl<span>)</span>
+  <span>return</span> shortStr
+<span>}</span>
+
+<span>function</span> <span>decode</span><span>(</span><span>shortUrl</span><span>)</span> <span>{</span>
+  <span>return</span> dict<span>.</span><span>get</span><span>(</span>shortUrl<span>)</span>
+<span>}</span>
+
+<span>function</span> <span>roundString</span><span>(</span><span>n</span><span>)</span> <span>{</span>
+  <span>const</span> strs <span>=</span> <span>'0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'</span>
+  <span>let</span> str <span>=</span> <span>''</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> n<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>const</span> random <span>=</span> Math<span>.</span><span>random</span><span>(</span><span>)</span> <span>*</span> <span>62</span> <span>>></span> <span>0</span>
+    str <span>+=</span> strs<span>[</span>random<span>]</span>
+  <span>}</span>
+  <span>return</span> str
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div><ol start="5">
+<li><a href="https://leetcode-cn.com/problems/repeated-dna-sequences/" target="_blank" rel="noopener noreferrer">187. 重复的DNA序列</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>findRepeatedDnaSequences</span><span>(</span><span>s</span><span>)</span> <span>{</span>
+  <span>const</span> dict <span>=</span> Object<span>.</span><span>create</span><span>(</span><span>null</span><span>)</span>
+  <span>const</span> len <span>=</span> s<span>.</span>length
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len <span>-</span> <span>9</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>const</span> key <span>=</span> s<span>.</span><span>substr</span><span>(</span>i<span>,</span> <span>10</span><span>)</span>
+    dict<span>[</span>key<span>]</span> <span>=</span> <span>(</span>dict<span>[</span>key<span>]</span> <span>||</span> <span>0</span><span>)</span> <span>+</span> <span>1</span>
+  <span>}</span>
+  <span>return</span> Object<span>.</span><span>keys</span><span>(</span>dict<span>)</span><span>.</span><span>filter</span><span>(</span><span>key</span> <span>=></span> dict<span>[</span>key<span>]</span> <span>></span> <span>1</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><ol start="6">
+<li><a href="https://leetcode-cn.com/problems/maximum-product-of-word-lengths/" target="_blank" rel="noopener noreferrer">318. 最大单词长度乘积</a></li>
+</ol>
+<div><pre><code><span>function</span> <span>maxProduct</span><span>(</span><span>words</span><span>)</span> <span>{</span>
+  <span>const</span> mark <span>=</span> words<span>.</span><span>map</span><span>(</span><span>(</span><span>)</span> <span>=></span> <span>0</span><span>)</span>
+  <span>// mark 当中用 二进制位 标记每一个字母是否出现</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> words<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> words<span>[</span>i<span>]</span><span>.</span>length<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+      mark<span>[</span>i<span>]</span> <span>|=</span> <span>(</span><span>1</span> <span>&lt;&lt;</span> <span>(</span>words<span>[</span>i<span>]</span><span>.</span><span>charCodeAt</span><span>(</span>j<span>)</span> <span>-</span> <span>96</span><span>)</span><span>)</span>
+    <span>}</span>
+  <span>}</span>
+  <span>let</span> ans <span>=</span> <span>0</span>
+  <span>for</span> <span>(</span><span>let</span> m <span>=</span> <span>0</span><span>;</span> m <span>&lt;</span> words<span>.</span>length<span>;</span> m<span>++</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> n <span>=</span> m <span>+</span> <span>1</span><span>;</span> n <span>&lt;</span> words<span>.</span>length<span>;</span> n<span>++</span><span>)</span> <span>{</span>
+      <span>if</span> <span>(</span><span>(</span>mark<span>[</span>m<span>]</span> <span>&amp;</span> mark<span>[</span>n<span>]</span><span>)</span> <span>!==</span> <span>0</span><span>)</span> <span>continue</span>
+      ans <span>=</span> Math<span>.</span><span>max</span><span>(</span>ans<span>,</span> words<span>[</span>m<span>]</span><span>.</span>length <span>*</span> words<span>[</span>n<span>]</span><span>.</span>length<span>)</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> ans
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div>]]></content>
+    <author>
+      <name>Vic</name>
+    </author>
+    <contributor>
+      <name>Vic</name>
+    </contributor>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">堆</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/heap/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/heap/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="堆的实现"> 堆的实现</h2>
 <div><pre><code><span>class</span> <span>Heap</span> <span>{</span>
   <span>constructor</span><span>(</span>list <span>=</span> <span>[</span><span>]</span><span>,</span> <span>compare</span> <span>=</span> <span>(</span><span>a<span>,</span> b</span><span>)</span> <span>=></span> <span>(</span>a <span>-</span> b<span>)</span><span>)</span> <span>{</span>
@@ -1388,14 +2285,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">链表</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="链表访问"> 链表访问</h2>
 <ol>
 <li><a href="https://leetcode-cn.com/problems/linked-list-cycle/" target="_blank" rel="noopener noreferrer">#141 判断链表是否有环</a></li>
@@ -1650,14 +2547,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">队列</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/queue/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/queue/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li><a href="https://leetcode-cn.com/problems/partition-list" target="_blank" rel="noopener noreferrer">#86 分隔链表</a></li>
 </ol>
@@ -1700,14 +2597,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">快速排序</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/quick-sort/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/quick-sort/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="基础应用"> 基础应用</h2>
 <ol>
 <li><a href="https://leetcode-cn.com/problems/sort-list/" target="_blank" rel="noopener noreferrer">#148. 排序链表</a></li>
@@ -1751,14 +2648,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">回溯法</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/reverse/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/reverse/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li><a href="https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/" target="_blank" rel="noopener noreferrer">17. 电话号码的字母组合</a></li>
 </ol>
@@ -1937,14 +2834,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">递归与栈</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/stack/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/stack/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li><a href="https://leetcode-cn.com/problems/validate-stack-sequences/" target="_blank" rel="noopener noreferrer">#946 验证栈序列</a></li>
 </ol>
@@ -2079,14 +2976,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">二叉树</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/tree/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/tree/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="基本操作"> 基本操作</h2>
 <ol>
 <li><a href="https://leetcode-cn.com/problems/binary-tree-preorder-traversal/" target="_blank" rel="noopener noreferrer">#144 二叉树的前序遍历</a></li>
@@ -2348,14 +3245,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">并查集</title>
     <id>https://x-vic.gitee.io/code/code/views/algorithm/union-find/</id>
     <link href="https://x-vic.gitee.io/code/code/views/algorithm/union-find/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="并查集的实现"> 并查集的实现</h2>
 <div><pre><code><span>class</span> <span>UnineFind</span> <span>{</span>
   <span>constructor</span><span>(</span><span>size</span><span>)</span> <span>{</span>
@@ -2610,14 +3507,14 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>Webpack</spa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">applicative</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/applicative/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/applicative/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>applicative functor 是实现了 ap 方法的 pointed functor</p>
 </blockquote>
@@ -2689,14 +3586,14 @@ Either<span>.</span><span>of</span><span>(</span>createUser<span>)</span><span>.
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数的组合</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/compose/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/compose/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>实际生产中，我们经常需要对数据进行分阶段加工。在这个过程中，不可避免就会出现<code>a(b(c()))</code>的写法，这种写法不利于阅读以及修改，下面祭出函数组合的神器“compose”</p>
 </blockquote>
@@ -2715,14 +3612,14 @@ Either<span>.</span><span>of</span><span>(</span>createUser<span>)</span><span>.
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函子</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/functor/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/functor/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>我们已经知道如何书写函数式的程序了，即通过管道把数据在一系列纯函数间传递的程序。我们也知道了，这些程序就是声明式的行为规范。但是，控制流（control flow）、异常处理（error handling）、异步操作（asynchronous actions）和状态（state）呢？还有更棘手的作用（effects）呢？本章将对上述这些抽象概念赖以建立的基础作一番探究。</p>
 </blockquote>
@@ -2974,14 +3871,14 @@ removeNeedlessContainer <span>=</span> <span>compose</span><span>(</span><span>e
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数式编程</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<p>函数式编程总结（使用 javascript 语言）。预计会有一下几块：</p>
 <ol>
 <li>函数参数处理</li>
@@ -2998,14 +3895,14 @@ removeNeedlessContainer <span>=</span> <span>compose</span><span>(</span><span>e
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数输入处理</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/inputs/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/inputs/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="为什么要对函数的参数进行处理"> 为什么要对函数的参数进行处理</h2>
 <p>多个参数的输入会增加函数的复杂性，这违背了<strong>一个函数只做一件事</strong>。</p>
 <h2 id="如何减少函数参数"> 如何减少函数参数</h2>
@@ -3046,14 +3943,14 @@ removeNeedlessContainer <span>=</span> <span>compose</span><span>(</span><span>e
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">monad</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/monad/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/monad/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>monad 是可以变扁（flatten）的 pointed functor。</p>
 </blockquote>
@@ -3180,14 +4077,14 @@ Maybe<span>.</span><span>of</span><span>(</span><span>3</span><span>)</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">Observable</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/rxjs/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/rxjs/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>Observable 是 rx 体系中的一个概念，而 rx 本身就是一个很大的话题。但是这里我们只是单纯地从函数式编程的角度来理解 Observable</p>
 </blockquote>
@@ -3238,14 +4135,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函子之间的转换</title>
     <id>https://x-vic.gitee.io/code/code/views/functional/transform/</id>
     <link href="https://x-vic.gitee.io/code/code/views/functional/transform/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>我们在借用函子的各种能力的时候，不可避免会出现函子嵌套函子的情况。前面两章，我们分别介绍了 chain 以及 ap 工具来避免了这种嵌套的情况。</p>
 </blockquote>
@@ -3403,14 +4300,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">动态规划</title>
     <id>https://x-vic.gitee.io/code/code/views/leetcode/dp/</id>
     <link href="https://x-vic.gitee.io/code/code/views/leetcode/dp/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="经典问题"> 经典问题</h2>
 <ul>
 <li><a href="https://leetcode-cn.com/problems/longest-increasing-subsequence/" target="_blank" rel="noopener noreferrer">300. 最长递增子序列</a></li>
@@ -4742,14 +5639,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">回溯法</title>
     <id>https://x-vic.gitee.io/code/code/views/leetcode/</id>
     <link href="https://x-vic.gitee.io/code/code/views/leetcode/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li><a href="https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/" target="_blank" rel="noopener noreferrer">17. 电话号码的字母组合</a></li>
 </ol>
@@ -4928,14 +5825,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">redux-observable 源码解读</title>
     <id>https://x-vic.gitee.io/code/code/views/others/redux-observable/</id>
     <link href="https://x-vic.gitee.io/code/code/views/others/redux-observable/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>redux-observable 是一个 redux 中间件。与多数 redux 中间件不同的是：其他中间件做的是改造 action 的工作，而 redux-observable 是在 action 的上层添加了一个对 action 流的监听，获取它所需要的 action，最后处理成不同的 action.</p>
 </blockquote>
@@ -5020,14 +5917,14 @@ observable
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">rxjs-hooks 源码解读</title>
     <id>https://x-vic.gitee.io/code/code/views/others/rxjs-hooks/</id>
     <link href="https://x-vic.gitee.io/code/code/views/others/rxjs-hooks/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<div><p>Tips</p>
 <p>这里一共 useObservable 以及 useEventCallback 两个 hook。<br>
 useObservable 从虚无中或是变化的 props 中得到衍生的数据。<br>
@@ -5129,14 +6026,14 @@ useEventCallback 从点击事件、变化的 props 中得到衍生数据。</p>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">koa</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-koa/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-koa/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>koa 给我印象比较深刻的是 ctx 以及中间件的洋葱模型，本次简单实现中，重点实现这两个特性</p>
 </blockquote>
@@ -5277,14 +6174,14 @@ module<span>.</span>exports <span>=</span> VKoa
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">Concurrent Mode &amp; fiber</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/fiber/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/fiber/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<div><p>主旨</p>
 <p>上一版实现的 <code>render</code> 是通过递归的方式将 <code>dom</code> 层层插入，最终实现了虚拟dom到页面的渲染。<br>
 但是这么做的问题在于递归的过程无法中断，从而导致阻塞用户点击事件和渲染动画这些高优先级的操作，给人一种卡顿的感觉。<br>
@@ -5488,14 +6385,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">函数组件</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/functionComponent/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/functionComponent/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="函数组件是怎样转化的"> 函数组件是怎样转化的？</h2>
 <div><pre><code><span>/** @jsx Redact.createElement */</span>
 <span>function</span> <span>App</span><span>(</span><span>props</span><span>)</span> <span>{</span>
@@ -5598,14 +6495,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">createElement &amp;&amp; render</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="createelement"> createElement</h2>
 <p>将 <code>babel</code> 解析过后的参数处理成一个虚拟 <code>dom</code></p>
 <div><pre><code><span>export</span> <span>function</span> <span>createElement</span><span>(</span><span>type<span>,</span> props<span>,</span> <span>...</span>children</span><span>)</span> <span>{</span>
@@ -5654,14 +6551,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">reconciliation</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/reconciliation/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/reconciliation/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>目前我们只添加节点到 DOM，还没考虑更新和删除节点的情况。要处理这2种情况，需要对比上次渲染的 fiber 和当前渲染的 fiber 的差异，根据差异决定是更新还是删除节点。React 把这个过程叫 <code>Reconciliation</code>。</p>
 </blockquote>
@@ -5878,14 +6775,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">render &amp; commit</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/render&amp;commit/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/render&amp;commit/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="render"> render</h2>
 <div><div><br><br><div>&nbsp;</div><br><br><br><br><br><div>&nbsp;</div><br><br></div><pre><code><span>function</span> <span>render</span><span>(</span><span>element<span>,</span> container</span><span>)</span> <span>{</span>
   <span>// render 时记录 wipRoot</span>
@@ -6047,14 +6944,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">useState</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-react/useState/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-react/useState/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>注意以下代码省略了未变化部分</p>
 </blockquote>
@@ -6122,14 +7019,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">redux</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-redux/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-redux/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="createstore"> createStore</h2>
 <p>创建 store 核心对象</p>
 <div><pre><code><span>const</span> <span>createStore</span> <span>=</span> <span>(</span><span>reducer<span>,</span> initState<span>,</span> enhancer</span><span>)</span> <span>=></span> <span>{</span>
@@ -6239,14 +7136,14 @@ react 目前是使用自己实现的调度算法，这里使用 <code>requestIdl
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">react-redux</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-redux/react-redux/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-redux/react-redux/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="用法"> 用法</h2>
 <p>看看 react-redux 有两个重要的 API 的用法：</p>
 <div><pre><code><span>// Provider</span>
@@ -6334,7 +7231,7 @@ ReactDOM<span>.</span><span>render</span><span>(</span><span>{</span>
           <span>...</span>props
         <span>}</span>
       <span>}</span><span>,</span> <span>[</span>props<span>,</span> store<span>,</span> count<span>]</span><span>)</span>
-      <span>return</span> <span><span><span>&lt;</span><span>WrappedComponent</span></span> <span><span>{</span><span>...</span><span>newProps</span><span>}</span></span> <span>/></span></span>
+      <span>return</span> <span><span><span>&lt;</span><span>WrappedComponent</span></span> <span><span>{</span><span>...</span>newProps<span>}</span></span> <span>/></span></span>
     <span>}</span>
   <span>}</span>
 <span>}</span>
@@ -6346,14 +7243,14 @@ ReactDOM<span>.</span><span>render</span><span>(</span><span>{</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">createApp &amp;&amp; mount</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-vue-next/createApp&amp;mount/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-vue-next/createApp&amp;mount/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/code/images/mount.svg" alt="mount" /></p>
 <h2 id="本文目标"> 本文目标</h2>
 <p>简单实现 vue3 中的 <code>createApp</code> 和 <code>mount</code> 两个 API。虽然只有两个 API，但是这两个 API 实现了 vue3 根实例的创建、组件的解析、vnode 数的构建...<br>
@@ -6643,14 +7540,14 @@ ReactDOM<span>.</span><span>render</span><span>(</span><span>{</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">reactive &amp;&amp; effect</title>
     <id>https://x-vic.gitee.io/code/code/views/owner-vue-next/</id>
     <link href="https://x-vic.gitee.io/code/code/views/owner-vue-next/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="目标"> 目标</h2>
 <p>实现 vue-next 响应式模块中的两个 API : <code>reactive</code>、 <code>effect</code></p>
 <div><pre><code><span>var</span> obj <span>=</span> <span>reactive</span><span>(</span><span>{</span>
@@ -6760,14 +7657,14 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">组件渲染的细节</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/componentDetail/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/componentDetail/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="得到组件的-render-方法"> 得到组件的 render 方法</h2>
 <blockquote>
 <p>在 mountComponent 的时候（setupRenderEffect 之前），vue 会 setupComponent(instance)</p>
@@ -6834,14 +7731,14 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
 <div><pre><code><span>export</span> <span>function</span> <span>callWithErrorHandling</span><span>(</span>
   fn<span>:</span> <span>Function</span><span>,</span>
   instance<span>:</span> ComponentInternalInstance <span>|</span> <span>null</span><span>,</span>
-  <span>type</span><span>:</span> ErrorTypes<span>,</span>
+  type<span>:</span> ErrorTypes<span>,</span>
   args<span>?</span><span>:</span> <span>unknown</span><span>[</span><span>]</span>
 <span>)</span> <span>{</span>
   <span>let</span> res
   <span>try</span> <span>{</span>
     res <span>=</span> args <span>?</span> <span>fn</span><span>(</span><span>...</span>args<span>)</span> <span>:</span> <span>fn</span><span>(</span><span>)</span>
   <span>}</span> <span>catch</span> <span>(</span>err<span>)</span> <span>{</span>
-    <span>handleError</span><span>(</span>err<span>,</span> instance<span>,</span> <span>type</span><span>)</span>
+    <span>handleError</span><span>(</span>err<span>,</span> instance<span>,</span> type<span>)</span>
   <span>}</span>
   <span>return</span> res
 <span>}</span>
@@ -6922,7 +7819,7 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
   instance<span>:</span> ComponentInternalInstance
 <span>)</span><span>:</span> VNode <span>{</span>
   <span>const</span> <span>{</span>
-    <span>type</span><span>:</span> Component<span>,</span>
+    type<span>:</span> Component<span>,</span>
     parent<span>,</span>
     vnode<span>,</span>
     proxy<span>,</span>
@@ -6997,14 +7894,14 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">createApp &amp;&amp; mount</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/createApp&amp;mount/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/createApp&amp;mount/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/code/images/patch.svg" alt="patch" /></p>
 <h2 id="createapp"> createApp</h2>
 <ol>
@@ -7075,8 +7972,8 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
     n1 <span>=</span> <span>null</span>
   <span>}</span>
 
-  <span>const</span> <span>{</span> <span>type</span><span>,</span> ref<span>,</span> shapeFlag <span>}</span> <span>=</span> n2
-  <span>switch</span> <span>(</span><span>type</span><span>)</span> <span>{</span>
+  <span>const</span> <span>{</span> type<span>,</span> ref<span>,</span> shapeFlag <span>}</span> <span>=</span> n2
+  <span>switch</span> <span>(</span>type<span>)</span> <span>{</span>
     <span>case</span> Text<span>:</span>
       <span>processText</span><span>(</span>n1<span>,</span> n2<span>,</span> container<span>,</span> anchor<span>)</span>
       <span>break</span>
@@ -7124,7 +8021,7 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
           container
         <span>)</span>
       <span>}</span> <span>else</span> <span>if</span> <span>(</span>__DEV__<span>)</span> <span>{</span>
-        <span>warn</span><span>(</span><span>'Invalid VNode type:'</span><span>,</span> <span>type</span><span>,</span> <span><span>`</span><span>(</span><span><span>${</span><span>typeof</span> <span>type</span><span>}</span></span><span>)</span><span>`</span></span><span>)</span>
+        <span>warn</span><span>(</span><span>'Invalid VNode type:'</span><span>,</span> type<span>,</span> <span><span>`</span><span>(</span><span><span>${</span><span>typeof</span> <span>type</span><span>}</span></span><span>)</span><span>`</span></span><span>)</span>
       <span>}</span>
   <span>}</span>
 <span>}</span>
@@ -7303,7 +8200,7 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
   <span>let</span> el<span>:</span> RendererElement
   <span>let</span> vnodeHook<span>:</span> VNodeHook <span>|</span> <span>undefined</span> <span>|</span> <span>null</span>
   <span>const</span> <span>{</span>
-    <span>type</span><span>,</span>
+    type<span>,</span>
     props<span>,</span>
     shapeFlag<span>,</span>
     transition<span>,</span>
@@ -7356,7 +8253,7 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
         <span>null</span><span>,</span>
         parentComponent<span>,</span>
         parentSuspense<span>,</span>
-        isSVG <span>&amp;&amp;</span> <span>type</span> <span>!==</span> <span>'foreignObject'</span><span>,</span>
+        isSVG <span>&amp;&amp;</span> type <span>!==</span> <span>'foreignObject'</span><span>,</span>
         optimized <span>||</span> <span>!</span><span>!</span>vnode<span>.</span>dynamicChildren
       <span>)</span>
     <span>}</span>
@@ -7399,14 +8296,14 @@ obj<span>.</span>haha<span>.</span>num <span>=</span> <span>9</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">effect</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/effect/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/effect/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<p>vue-next 中的依赖收集通过显式调用它提供的<code>effect</code>方法来启动。</p>
 <h2 id="usage"> usage</h2>
 <div><pre><code><span>const</span> <span>{</span> reactive<span>,</span> effect <span>}</span> <span>from</span> 'vue
@@ -7494,7 +8391,7 @@ obj<span>.</span>foo<span>++</span>
 <li>找响应对象的键对应的依赖列表</li>
 <li><code>activeEffect.deps</code> 中添加 <code>Set&lt;Effect&gt;</code></li>
 </ol>
-<div><div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div>&nbsp;</div><div>&nbsp;</div><br><br><br><br><br><br><br><br><br><br><br><br></div><pre><code><span>function</span> <span>track</span><span>(</span>target<span>:</span> object<span>,</span> <span>type</span><span>:</span> TrackOpTypes<span>,</span> key<span>:</span> <span>unknown</span><span>)</span> <span>{</span>
+<div><div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div>&nbsp;</div><div>&nbsp;</div><br><br><br><br><br><br><br><br><br><br><br><br></div><pre><code><span>function</span> <span>track</span><span>(</span>target<span>:</span> object<span>,</span> type<span>:</span> TrackOpTypes<span>,</span> key<span>:</span> <span>unknown</span><span>)</span> <span>{</span>
   <span>if</span> <span>(</span><span>!</span>shouldTrack <span>||</span> activeEffect <span>===</span> <span>undefined</span><span>)</span> <span>{</span>
     <span>return</span>
   <span>}</span>
@@ -7515,7 +8412,7 @@ obj<span>.</span>foo<span>++</span>
       activeEffect<span>.</span>options<span>.</span><span>onTrack</span><span>(</span><span>{</span>
         effect<span>:</span> activeEffect<span>,</span>
         target<span>,</span>
-        <span>type</span><span>,</span>
+        type<span>,</span>
         key
       <span>}</span><span>)</span>
     <span>}</span>
@@ -7532,7 +8429,7 @@ obj<span>.</span>foo<span>++</span>
 </ol>
 <div><pre><code><span>export</span> <span>function</span> <span>trigger</span><span>(</span>
   target<span>:</span> object<span>,</span>
-  <span>type</span><span>:</span> TriggerOpTypes<span>,</span>
+  type<span>:</span> TriggerOpTypes<span>,</span>
   key<span>?</span><span>:</span> <span>unknown</span><span>,</span>
   newValue<span>?</span><span>:</span> <span>unknown</span><span>,</span>
   oldValue<span>?</span><span>:</span> <span>unknown</span><span>,</span>
@@ -7545,7 +8442,7 @@ obj<span>.</span>foo<span>++</span>
   <span>}</span>
   <span>const</span> effects <span>=</span> <span>new</span> <span>Set<span>&lt;</span>ReactiveEffect<span>></span></span><span>(</span><span>)</span>
   <span>const</span> computedRunners <span>=</span> <span>new</span> <span>Set<span>&lt;</span>ReactiveEffect<span>></span></span><span>(</span><span>)</span>
-  <span>if</span> <span>(</span><span>type</span> <span>===</span> TriggerOpTypes<span>.</span><span>CLEAR</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>type <span>===</span> TriggerOpTypes<span>.</span><span>CLEAR</span><span>)</span> <span>{</span>
     <span>// collection being cleared</span>
     <span>// trigger all effects for target</span>
     <span>// Map 对象是由 forEach 方法的 map.forEach((value, key, map) => { ... })</span>
@@ -7565,9 +8462,9 @@ obj<span>.</span>foo<span>++</span>
     <span>}</span>
     <span>// also run for iteration key on ADD | DELETE | Map.SET</span>
     <span>if</span> <span>(</span>
-      <span>type</span> <span>===</span> TriggerOpTypes<span>.</span><span>ADD</span> <span>||</span>
-      <span>type</span> <span>===</span> TriggerOpTypes<span>.</span><span>DELETE</span> <span>||</span>
-      <span>(</span><span>type</span> <span>===</span> TriggerOpTypes<span>.</span><span>SET</span> <span>&amp;&amp;</span> target <span>instanceof</span> <span>Map</span><span>)</span>
+      type <span>===</span> TriggerOpTypes<span>.</span><span>ADD</span> <span>||</span>
+      type <span>===</span> TriggerOpTypes<span>.</span><span>DELETE</span> <span>||</span>
+      <span>(</span>type <span>===</span> TriggerOpTypes<span>.</span><span>SET</span> <span>&amp;&amp;</span> target <span>instanceof</span> <span>Map</span><span>)</span>
     <span>)</span> <span>{</span>
       <span>const</span> iterationKey <span>=</span> <span>isArray</span><span>(</span>target<span>)</span> <span>?</span> <span>'length'</span> <span>:</span> <span>ITERATE_KEY</span>
       <span>addRunners</span><span>(</span>effects<span>,</span> computedRunners<span>,</span> depsMap<span>.</span><span>get</span><span>(</span>iterationKey<span>)</span><span>)</span>
@@ -7577,7 +8474,7 @@ obj<span>.</span>foo<span>++</span>
     <span>scheduleRun</span><span>(</span>
       effect<span>,</span>
       target<span>,</span>
-      <span>type</span><span>,</span>
+      type<span>,</span>
       key<span>,</span>
       __DEV__
         <span>?</span> <span>{</span>
@@ -7625,7 +8522,7 @@ obj<span>.</span>foo<span>++</span>
 <div><pre><code><span>function</span> <span>scheduleRun</span><span>(</span>
   effect<span>:</span> ReactiveEffect<span>,</span>
   target<span>:</span> object<span>,</span>
-  <span>type</span><span>:</span> TriggerOpTypes<span>,</span>
+  type<span>:</span> TriggerOpTypes<span>,</span>
   key<span>:</span> <span>unknown</span><span>,</span>
   extraInfo<span>?</span><span>:</span> DebuggerEventExtraInfo
 <span>)</span> <span>{</span>
@@ -7643,14 +8540,14 @@ obj<span>.</span>foo<span>++</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">handlers</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/handler/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/handler/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="mutablehandlers-常规对象使用的-handler"> mutableHandlers 常规对象使用的 handler</h2>
 <h3 id="creategetter"> createGetter</h3>
 <p><code>Reflect</code>将一些明显属于语言内部的方法(Object.defineProperty)，放到 Reflect 中，作为它的静态方法。</p>
@@ -7735,14 +8632,14 @@ obj<span>.</span>foo<span>++</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
   <entry>
     <title type="html">reactive</title>
     <id>https://x-vic.gitee.io/code/code/views/vue-next/reactive/</id>
     <link href="https://x-vic.gitee.io/code/code/views/vue-next/reactive/"/>
-    <updated>2021-06-20T14:12:46.000Z</updated>
+    <updated>2021-06-29T08:42:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="usage"> usage</h2>
 <div><pre><code><span>import</span> <span>{</span> reactive <span>}</span> <span>from</span> <span>'vue'</span>
 
@@ -7777,7 +8674,7 @@ obj<span>.</span>foo<span>++</span>
   collectionHandlers<span>:</span> ProxyHandler<span>&lt;</span><span>any</span><span>></span>
 <span>)</span> <span>{</span>
   <span>// ...判断 target 是否已被代理、已经是一个 Proxy 对象、是否在被代理的白名单中（如：VNode...）</span>
-  <span>const</span> handlers <span>=</span> collectionTypes<span>.</span><span>has</span><span>(</span>target<span>.</span><span>constructor</span><span>)</span>
+  <span>const</span> handlers <span>=</span> collectionTypes<span>.</span><span>has</span><span>(</span>target<span>.</span>constructor<span>)</span>
     <span>?</span> collectionHandlers
     <span>:</span> baseHandlers
   observed <span>=</span> <span>new</span> <span>Proxy</span><span>(</span>target<span>,</span> handlers<span>)</span>
@@ -7795,7 +8692,7 @@ obj<span>.</span>foo<span>++</span>
     <contributor>
       <name>Vic</name>
     </contributor>
-    <published>2021-06-20T14:12:46.000Z</published>
+    <published>2021-06-29T08:42:49.000Z</published>
     <rights>Copyright by Vic</rights>
   </entry>
 </feed>
