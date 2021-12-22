@@ -159,7 +159,26 @@ function findRedundantConnection(edges) {
 
 2. [#1319. 连通网络的操作次数](https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected/)
 
+本质上就是判断机房中有多少个机器集合
 ```js
+function makeConnected(n, connections) {
+  let rest = 0 // 机房中有多少多余的线缆
+  let setNum = 0 // 机房中一共有多少集合
+  const uf = new UnineFind(n)
+  for (let [s, e] of connections) {
+    if (uf.get(s) !== uf.get(e)) {
+      uf.merge(s, e)
+    } else { // 已经连通过，有多余线缆
+      rest++
+    }
+  }
+  // 计算有多少个集合
+  for (let i = 0; i < n; i++) {
+    if (uf.get(i) === i) setNum++
+  }
+  if (setNum - 1 > rest) return -1
+  return setNum - 1
+}
 ```
 
 3. [#128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
@@ -188,7 +207,7 @@ class UnineFind {
 }
 ```
 
-题解
+题解：我们将相邻的关系当成是一种连通关系
 ```js
 function longestConsecutive(nums) {
   const len = nums.length
@@ -221,6 +240,7 @@ function longestConsecutive(nums) {
 
 4. [#947. 移除最多的同行或同列石头](https://leetcode-cn.com/problems/most-stones-removed-with-same-row-or-column/)
 
+将同行或同列的元素连通起来，当作一个集合。
 ```js
 function removeStones(stones) {
   const len = stones.length
@@ -253,11 +273,67 @@ function removeStones(stones) {
 5. [#1202. 交换字符串中的元素](https://leetcode-cn.com/problems/smallest-string-with-swaps/)
 
 ```js
+// 这里还要用到堆这个数据结构，这里省略
+function smallestStringWithSwaps(s, pairs) {
+  const len = s.length
+  const uf = new UnineFind(len)
+  const heaps = Array(len).fill(null).map(() => new Heap(undefined, (a, b) => b.charCodeAt() - a.charCodeAt()))
+  // 建立连通关系
+  for (let [s, e] of pairs) {
+    uf.merge(s, e)
+  }
+  // 将同一个集合中的元素放到其父节点对应的堆当中去
+  for (let i = 0; i < len; i++) {
+    heaps[uf.get(i)].push(s[i])
+  }
+  // 分组排序，每次从父节点的堆中取出堆顶元素
+  let ans = ''
+  for (let i = 0; i < len; i++) {
+    ans += heaps[uf.get(i)].pop()
+  }
+  return ans
+}
 ```
 
 6. [#721. 账户合并](https://leetcode-cn.com/problems/accounts-merge/)
 
 ```js
+function accountsMerge(accounts) {
+  const len = accounts.length
+  const uf = new UnineFind(len)
+  // 已经访问过的账户，内部存储索引
+  const emailToIdx = Object.create(null)
+  // 对账户进行分类
+  for (let i = 0; i < accounts.length; i++) {
+    // 遍历，看邮箱是不是之前出现过
+    for (let j = 0; j < accounts[i].length; j++) {
+      if (j === 0) continue
+      // 如果邮箱已经出现过，就进行连通
+      if (emailToIdx[accounts[i][j]] != null) {
+        uf.merge(i, emailToIdx[accounts[i][j]])
+      } else {
+        // 记录当前邮箱所在的索引
+        emailToIdx[accounts[i][j]] = i
+      }
+    }
+  }
+  const ans = []
+  for (let i = 0; i < accounts.length; i++) {
+    // 找爸爸的索引
+    const rootIndex = uf.get(i)
+    if (!ans[rootIndex]) {
+      const [name, ...emails] = accounts[i]
+      ans[rootIndex] = [name, ...[...new Set(emails)].sort()]
+    } else {
+      const [name, ...oldEmails] = ans[rootIndex]
+      const [, ...newEmails] = accounts[i]
+      const emails = [...new Set([...oldEmails, ...newEmails])]
+      emails.sort()
+      ans[rootIndex] = [name, ...emails]
+    }
+  }
+  return ans.filter(item => item)
+}
 ```
 
 
