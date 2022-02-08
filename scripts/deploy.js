@@ -1,9 +1,7 @@
 const puppeteer = require("puppeteer");
 
-// const account = JSON.parse(process.env.npm_config_argv).remain[0];
-// const password = JSON.parse(process.env.npm_config_argv).remain[1];
-const account = '18373209286';
-const password = 'mxuan.241';
+const account = JSON.parse(process.env.npm_config_argv).remain[0];
+const password = JSON.parse(process.env.npm_config_argv).remain[1];
 const giteePages = "https://gitee.com/x-vic/code/pages";
 
 const delay = timer => new Promise(resolve => setTimeout(resolve, timer));
