@@ -29,17 +29,40 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: docs/.vuepress/dist
-      - name: 同步代码到码云
-        uses: wei/git-sync@v1
+      # - name: 同步代码到码云
+      #   uses: wei/git-sync@v1
+      #   env:
+      #     SOURCE_REPO: "git@github.com:x-vic/code.git"
+      #     SOURCE_BRANCH: "refs/remotes/source/*"
+      #     DESTINATION_REPO: "git@gitee.com:x-vic/code.git"
+      #     DESTINATION_BRANCH: "refs/heads/*"
+      #     # SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+      #   with:
+      #     args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+      # # 码云点击部署
+      # - name: 码云 pages 部署
+      #   run: npm run deploy ${{ secrets.GITEE_NAME }} ${{ secrets.GITEE_PWD }}
+
+
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@master
         env:
-          SOURCE_REPO: "git@github.com:x-vic/code.git"
-          SOURCE_BRANCH: "refs/remotes/source/*"
-          DESTINATION_REPO: "git@gitee.com:x-vic/code.git"
-          DESTINATION_BRANCH: "refs/heads/*"
-          # SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
-          args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
-      # 码云点击部署
-      - name: 码云 pages 部署
-        run: npm run deploy ${{ secrets.GITEE_NAME }} ${{ secrets.GITEE_PWD }}
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: "git@github.com:x-vic/code.git"
+          # 注意替换为你的 Gitee 目标仓库地址
+          destination-repo: "git@gitee.com:x-vic/code.git"
+
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@master
+        with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: 18373209286
+          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+          gitee-password: ${{ secrets.GITEE_PWD }}
+          # 注意替换为你的 Gitee 仓库
+          gitee-repo: x-vic/code
+          branch: gh-pages
